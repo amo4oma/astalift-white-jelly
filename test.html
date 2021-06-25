@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="banner" class="bannerBox">
+        <div class="swiper-container" style="z-index: 0;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide moveRight">
+                    <div class="pc"><img src="images/how-to-use/Flowers.png" /></div>    
+                    <div class="sp"><img src="images/how-to-use/Frame.png" /></div>                 
+                </div>
+                <div class="swiper-slide">
+                    <div class="pc"><img src="images/how-to-use/Flowers.png" /></div>
+                    <div class="sp"><img src="../../../../../Public/Home/images/img_banner02_sp.jpg" /></div> 
+            </div>
+                <div class="swiper-slide">
+                    <div class="pc"><img src="../../../../../Public/Home/images/img_banner03.jpg" /></div>
+                    <div class="sp"><img src="../../../../../Public/Home/images/img_banner03_sp.jpg" /></div> 
+                </div>
+            </div>
+        </div>
+        <div class="bannerMask">
+                <div class="baMaskScCon">
+                  <div class="banMaskImg">
+                    <span>
+                        <div class="pc"><img src="images/how-to-use/Frame.png" alt=""></div>                       
+          
+                    </span>
+                
+                  </div>                
+                </div>     
+        </div>
+      </div> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+       <!-- Swiper JS -->
+ <script src="__JS__/swiper.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+ trList=['moveRight','moveRight','moveRight'];
+ var swiper = new Swiper('.swiper-container',{
+     speed:500,
+     autoplay:4400,
+     autoplayDisableOnInteraction:false,
+     effect:'fade',
+     pagination : '.swiper-pagination',
+     paginationClickable :true,
+
+    
+     });	
+ </script>
+</body>
+</html>

@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Mulish;
+    src: url(../fonts/Mulish-VariableFont_wght.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Bodoni;
+    src: url(../fonts/Bodoni72-Bold.ttf);
+    font-weight: bold;
+}
+html {
+    font-size: 62.5%;
+}
+ h3{
+   font-family: Mulish;
+ }
+ h1{
+    font-family: Bodoni;
+ }
+ .navbar{
+     width: 100%;
+     height: 80px;
+     background-color:  #d7063b;
+     color: #fff;
+     position: fixed;
+     display: none;
+     z-index: 999;
+ }
+ .logo{
+     width: 200px;
+     margin-left: 100px;
+ 
+ }
+.placeholder-row{
+    margin-top: 200px;
+}
+ .placeholder-title-1{
+     font-size: 25pt;
+     Font : 50pt;
+     color: #d7063b;
+ }
+ .placeholder-title-2{
+     position: relative;
+     z-index: 1;
+     font-size: 49pt;
+     Font : 50pt;
+     color: #d7063b;
+ }
+ .placeholder-flower-1{
+     position: relative;
+     left: 15rem;
+     max-width: 300px;
+ }
+ .placeholder-flower-2{
+     position: relative;
+     left: -60%;
+ }
+ .placeholder-flower-2-front{
+     position: absolute;
+     z-index: 1;
+     right: 20rem;
+     top: 2rem;
+     max-width: 30rem;
+
+ }
+ .placeholder-flower-2-back{
+     max-width: 15rem;
+     position: absolute;
+     right: 16rem;
+     top: -5rem;
+     
+ }
+ 
+#preloader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f3eeea;
+    z-index: 9999;
+    transition: all 0.4s ease;
+  }
+  .loader-page-container{
+      position: relative;
+      height: inherit;
+  }
+  
+  .loader {
+    position: absolute;
+    top: 50%; left: 48%;
+    transform: translate(-50%,-50%);
+    transition: 0.4s;
+  }
+  
+  .loader .loader_text {
+      position: absolute;
+      top: -35px;
+      left: 101%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #d7063b;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .loader .loader_bar  {
+    position: relative;
+    width: 600px;
+    height: 2px;
+    background: #EDEEF7;
+    border-radius: 50px;
+  }
+  
+  .loader .loader_bar:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d7063b;
+    border-radius: 50px;
+    animation: fill 2.5s ease;
+  }
+  
+  @keyframes fill {
+    0% { width: 0% }
+    100% { width: 100% }
+  }
+  /* placeholder page ends */
+#sec-2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f3eeea ;
+    transition: background-color 1s;
+    background-image: url(../images/hearo2/Red\ Glow\ 1.png), url(../images/hearo2/White\ Glow\ 1.png), url(../images/hearo2/White\ Glow\ 2.png),
+    url(../images/hearo2/Red\ Glow\ 2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#sec-2::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: inherit;
+    background-color: rgba(82, 3, 23, 0.85);
+  
+}
+ 
+ 
+ .main-title{
+     position: absolute;
+     left: 11%;
+ }
+.title-1{
+    font-family: Bodoni;
+    position: relative;
+    font-size: 10rem;
+    color: #fff;
+    z-index: 4;
+    letter-spacing: 10;
+}
+.subtitle{
+    position: relative;
+    font-family: Mulish ;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fff;
+    z-index: 4
+    ;
+
+}
+ 
+ .hero-flowers-top{
+    max-width: 900px;
+     position: absolute;
+     top: 0;
+     z-index: 2;
+ }
+ .berry-1{
+    width: 200px;
+    top: 10rem;
+     left: -10px;z-index: 3;
+ }
+ .flwr-1{
+     width: 50rem;
+     left: 100px;
+ }
+ .flwr-2{
+     width: 100%;
+     right: -10px;
+     z-index: 4;
+ }
+.bottel{
+    position: absolute;
+    max-width: 50rem;
+    left: 5rem;
+}
+.sparkle-1{
+    left: 30rem;
+}
+
+.bottom-flowers{
+ 
+    position: absolute;
+     
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.hero-flowers-bottom{
+ 
+}
+
+.glow-1{
+    width: 38%;
+
+    left: 0px;
+    position: absolute;
+    /* top: -44px; */
+    bottom: 172px;
+    z-index: -1;
+}
+.sparkle-4{
+    position: absolute;
+    width: 20%;
+    top: -381px;
+}
+.flwr-4{
+    width: 41%;
+ 
+ 
+}
+.glow-2{
+    position: absolute;
+    left: -28px;
+    width: 105%;
+    bottom: 0;
+    z-index: -1;
+}
+.sparkle-3{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 20rem;
+
+}
+.flwr-3{
+    width: 30%;
+position: absolute;
+right: 0px;
+bottom: 0;
+}
+.glow-3{
+    position: absolute;
+    right: 0;
+    left: 60%;
+    bottom: 0;
+    width: 40%;
+    z-index: -2;
+}
+.sparkle-2{
+    position: absolute;
+    left: 60%;
+    width: 38%;
+    bottom: 0px;
+    z-index: -1;
+}
+.leaf-1{
+    position: absolute;
+    right: 0;
+    width: 8%;
+    bottom: 210px;
+ 
+}
+.flwr-9{
+    
+    position: absolute;
+    left: -190px;
+    top: 0;
+    width: 50rem;
+    z-index: -2;
+}
+.flwr-5{
+    width: 50rem;
+    position: absolute;
+    right: 10%;
+    top: -3%;
+    z-index: -2;
+}
+.flwr-6{
+    width: 20rem;
+    position: absolute;
+    right: 0;
+    left: 90%;  
+    top: 43%;
+    z-index: -2;
+}
+.leaf-2{
+    position: absolute;
+    z-index: -1;
+    left: -33px;
+    width: 13rem;
+    bottom: 35rem;
+}
+.flwr-8{
+    position: absolute;
+    z-index: -2;
+    width: 30rem;
+    bottom: -30px;
+    left: 6%;
+ 
+}
+.flwr-7{
+    position: absolute;
+    z-index: -2;
+    width: 38rem;
+    bottom: -158px;
+    left: 62%;
+ 
+}
+.bottelAndDescrip-container{
+    position: relative;
+}
+ .bottel-container{
+     position: relative;
+     left: 41em;
+     top: 60px;
+ }
+ .wj-top{
+     position: absolute;
+     width: 20em;
+     z-index: -1;
+     top: -8.5rem;
+     
+ }
+ .wj-bottom{
+     position: absolute;
+     width: 20em;
+     z-index: -2;
+     top: -6rem;
+
+ }
+ .discription-1-div h1{
+    font-family: Bodoni;
+    font-size: 3rem;
+    Color: #d7063b;
+    text-align: left;
+ }
+ .title{
+    font-family: Bodoni;
+    font-size: 3rem;
+    Color: #d7063b;
+    text-align: left;
+ }
+ .discription-2-div{
+     position: absolute;
+     left: 33%;
+     opacity: 0;
+ }
+ .discription-2-div{
+    font-family: Bodoni;
+    font-size: 3rem;
+    Color: #d7063b;
+    text-align: left;
+ }
+ .discription-1-div p{
+    Color: #d7063b;
+    font-size: 1rem;
+ }
+ 
+ .discription-2-div p{
+    Color: #d7063b;
+    font-size: 1rem;
+ }
+ .btn{
+     position: relative;
+     z-index: 4;
+     width: 90px;
+     border-radius: 50px;
+ }
+ .jelly-drops-container{
+     position: relative;
+     top: 60px;
+ }
+ .jellysAndMessages-container{
+     position: relative;
+     left: -5rem;
+     opacity: 0;
+ }
+ .left-and-right-messages{
+     position: relative;
+ }
+ 
+ .left-description-messages{
+     position: absolute;
+     left: 20%;
+    bottom: 50px;
+     width: 25%;
+     opacity: 0;
+
+ }
+ .right-description-messages{
+     position: absolute;
+     right: 0;
+     left: 60%;
+     bottom: -50px;
+     opacity: 0;
+     width: 25%;
+ }
+ .left-description-messages-2{
+     position: absolute;
+     left: 20%;
+     bottom: 50px;
+     width: 100%;
+     opacity: 0;
+     width: 25%;
+
+ }
+ .right-description-message-2{
+     position: absolute;
+     right: 0;
+     left: 60%;
+     bottom: -50px;
+     opacity: 0;
+     width: 25%;
+ }
+ .left-description-messages-3{
+     position: absolute;
+     left: 20%;
+     bottom: 50px;
+     width: 100%;
+     opacity: 0;
+     width: 25%;
+
+ }
+ .right-description-message-3{
+     position: absolute;
+     right: 0;
+     left: 60%;
+     bottom: -50px;
+     opacity: 0;
+     width: 25%;
+ }
+ .left-description-messages-title{
+     font-size: 30px;
+     font-family: Mulish;
+     font-weight: bold;
+
+     color: #d7063b;
+ }
+ .left-description-messages-subtitle{
+     font-size: 17px;
+     font-family: Mulish;
+ 
+
+     color: #d7063b;
+ }
+ .right-description-title{
+     font-size: 30px;
+     font-family: Mulish;
+     font-weight: bold;
+
+     color: #d7063b;
+ }
+ .right-description-subtitle{
+     font-size: 17px;
+     font-family: Mulish;
+ 
+     color: #d7063b;
+ }
+ .jelly{
+     position: absolute;
+  
+
+ }
+ .j-img-1{
+    width: 2rem;
+    bottom: 25rem;
+    left: 10rem;
+ }
+ .j-img-2{
+    right: -7rem;
+    bottom: 9rem;
+    width: 7rem;
+ }
+ .j-img-3{
+    right: 0;
+    bottom: 0rem;
+    width: 7rem;
+    left: 6rem;
+ }
+ .j-img-4{
+    left: 0rem;
+    bottom: 3px;
+    width: 2.5rem;
+ }
+ .j-img-5{
+    left: 9rem;
+    bottom: -23px;
+    width: 1.2rem
+ }
+ .delivering-result-container{
+     position: absolute;
+     width: 60%;
+    left: 20%;
+     opacity: 0;
+ }
+ .delivering-result-title{
+     color: #d7063b;
+     font-size: 50px;
+     text-align: center;
+     font-family: Bodoni;
+     font-weight: bold;
+ 
+ }
+ .delivering-result-subtitle{
+     color: #d7063b;
+     font-size: 25px;
+     text-align: center;
+     font-family: Mulish;
+ 
+ }
+ .skin-cells-container{
+     position: relative;
+     top: 100px;
+     left: 10%;
+     opacity: 0;
+  
+ }
+ .cells-images{
+     position: relative;
+   
+  
+ }
+ .skin-images{
+     position: relative;
+ }
+ .cell-1{
+     position: absolute;
+     width: 70%;
+     bottom: 10%;
+     z-index:2;
+     
+ }
+ .cell-2{
+    position: absolute;
+     width: 70%;
+     bottom: 10%;
+     z-index: 2;
+
+ }
+ .skin-1{
+    position: absolute;
+     width: 70%;
+     z-index: 3;
+
+ }
+ .skin-2{
+    position: absolute;
+     width: 70%;
+     z-index: 1;
+
+ }
+ .skin-title{
+     font-family: Mulish;
+     font-weight: bold;
+     font-size: 24px;
+     color: #d7063b;
+ }
+ .skin-subtitle{
+     font-family: Mulish;
+  
+     font-size: 17px;
+     color: #d7063b;
+ }
+ .first-message{
+     position: absolute;
+  
+
+ 
+ }
+ .second-message{
+    position: absolute;
+ 
+  
+ }
+ .button-col{
+     position: relative;
+     left:33%;
+     bottom: -20em;
+ }
+ #sec-3{
+     width: 100%;
+     height: 100vh;
+     background-color: #f3eeea;
+ }
+#sec-4{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-size: 3rem;
+    padding: 0%;
+ background-image: url(../images/how-to-use/Background.png);
+  /* -webkit-mask-image: url(../images/how-to-use/Frame.png);
+  mask-image: url(../images/how-to-use/Frame.png);
+  mask-size: contain;
+  -webkit-mask-size: contain; */ 
+
+}
+ 
+/* #sec-4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+ 
+ 
+} */
+ 
+ 
+ .one{
+     height: 200vh;
+ }
+ .rounded-circle{
+     border-radius: 50%;
+ }
+ 
+.rounded-circle{
+    width: 298px;
+    height: auto;
+    position: relative;
+    left: 0px;
+    top: 25%;
+    z-index: 1;
+ 
+}
+.message{
+    width: 376px;
+    position: absolute;
+    font-size: 17px;
+    color: white;
+    z-index: 3;
+ 
+    margin-left: 38%;
+   
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 455px;
+}
+
+
+@media screen and (max-width : 768px){
+ #sec-2{
+  overflow: hidden;
+
+ }
+}  
+@media screen and (max-width : 480px){
+    #sec-2{
+        overflow: hidden;
+      
+    }      
+    .title-1{
+        font-size: 3rem;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+}
