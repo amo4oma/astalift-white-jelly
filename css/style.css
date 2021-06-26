@@ -617,9 +617,57 @@ bottom: 0;
   mask-image: url(../images/how-to-use/Frame.png);
   mask-size: contain;
   -webkit-mask-size: contain; */ 
+  overflow: hidden;
 
 }
+.how-to-use{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    z-index: 444;
+    top: 50%;
+    left: 10%;
+    overflow-x: hidden;
+}
+.frames{
+    position: relative;
+}
+ .flwres-frame{
+     width: 80%;
+    margin-top: 15%;
+     position: absolute;
+     left:20em;
  
+ 
+ }
+ .girl-frame{
+     width: 90%;
+     margin-top: 25%;
+        left: 20em;
+     position: absolute;
+ 
+ }
+ 
+ .frame-top{
+     width: 100%;
+     position: absolute;
+     display: block;
+   
+ }
+.how-to-use-messages{
+    position: relative;
+    left:70%;
+    top:25%;
+    width: 25%;
+}
+.step-1,
+.step-2,
+.step-3,
+.step-4
+{
+    position: absolute;
+    color: #fff;
+}
 /* #sec-4::before{
     content: "";
     position: absolute;
@@ -684,5 +732,6 @@ bottom: 0;
     }
     .subtitle{
         font-size: 1rem;
-    }
+ 
+ 
 }

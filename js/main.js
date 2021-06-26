@@ -112,9 +112,32 @@ tl.from('.second-message',5,{y:50, opacity:0})
 //  })
  
 
-
-
+     
+let tl2 = gsap.timeline({
+  scrollTrigger :{
+      trigger : "#sec-4",
+      pin: true, 
+      scrub: true,
+      markers: true,
+      start : "center center",
+      end: "+=" + (window.innerHeight * 8),
+    }
+      });
+      tl2.from('.step-1', 5, {y: 100, opacity:0 })
+      tl2.to('.step-1', 5, {opacity:0 })
+      tl2.to('.flwres-frame', 1 , {x: -300}, 'frist')
+      tl2.to('.girl-frame', 2 , {x: -300}, 'frist')
+      tl2.from('.step-2', 5, {y: 100, opacity:0 })
+      tl2.to('.step-2', 5, {opacity:0 })
+      tl2.to('.flwres-frame', 1 , {x: -600}, 'second')
+      tl2.to('.girl-frame', 2 , {x: -670}, 'second')
+      tl2.from('.step-3', 5, {y: 100, opacity:0 })
+      tl2.to('.step-3', 5, {opacity:0 })
+      tl2.to('.flwres-frame', 1 , {x: -900}, '3rd')
+      tl2.to('.girl-frame', 2 , {x: -1050}, '3rd')
+      tl2.from('.step-4', 2, {y: 100, opacity:0 })
  
+
 
 $(document).ready(function(){
   
