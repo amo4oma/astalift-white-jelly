@@ -304,6 +304,8 @@ html {
 }
 .flwr-4{
     width: 41%;
+    max-width: 500px;
+    height: auto;
 }
 .glow-2{
     position: absolute;
