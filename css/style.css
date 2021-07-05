@@ -305,6 +305,7 @@ html {
 .flwr-4{
     width: 41%;
     max-width: 500px;
+    max-height: 500px;
  
 }
 .glow-2{
@@ -437,7 +438,7 @@ bottom: 0;
  .discription-2-div{
      position: absolute;
      left: 39%;
-     top: 30%;
+    top: -50px;
      opacity: 0;
  }
  
