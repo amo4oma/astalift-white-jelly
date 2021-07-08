@@ -981,6 +981,9 @@ bottom: 0;
  .accordion-col{
      position: absolute;
  }
+ .gif-icon{
+     width: 400px;
+ }
   @media only screen and (max-width: 500px) {
       .btn-mod.btn-large {
          padding: 6px 16px;
@@ -1000,14 +1003,58 @@ bottom: 0;
  }
 }  
 @media screen and (max-width : 480px){
-    #sec-2{
-        overflow: hidden;
-      
+    #sec-2,#sec-4{
+        display: none;
     }      
     .title-1{
         font-size: 3rem;
     }
     .subtitle{
         font-size: 1rem;
-}}
+    }
+    .gif-icon{
+        width: 100%;
+    }
+    .mobile-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .mobile-flex-md{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-container{
+        position: relative;
+        width: 100%;
+        background-image: url(../images/mobile/20_FAQs.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .form{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 50px;
+    }
+    .check-container{
+
+        position: unset;
+        width: 66%;
+        margin-top: 100px;
+ 
+     }
+    .form-btn{
+        position: unset;
+        width: 50%;
+
+    }
+    .accordion-container{
+        position: unset;
+     
+    }
+    .accordion-col{
+        position: relative;
+    }
+}
 
