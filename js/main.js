@@ -3,7 +3,7 @@ let tl = gsap.timeline({
         trigger : "#sec-2",
         pin: true, 
         scrub: true,
-        markers: true,
+  
         start : "top top",
         end: "+=" + (window.innerHeight * 20),
         onLeave: () =>{
@@ -114,7 +114,7 @@ let tl2 = gsap.timeline({
       trigger : "#sec-4",
       pin: true, 
       scrub: true,
-      markers: true,
+ 
       start : "center center",
       end: "+=" + (window.innerHeight * 8),
     }
@@ -260,6 +260,17 @@ $(window).on('load', function() {
 
 });
 
+// second swiper 
+
+var screenWidth = $( window ).width();
+var newSwiper = new Swiper('.slider2', {
+  slidesPerView: screenWidth > 600 ? 4 : 1,
+  paginationClickable: true,
+  spaceBetween: 2,
+  lazyLoading: true,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev'
+});
 // PLACEHOLDER PAGE ENDS 
 
 var cursor = $(".cursor"),
@@ -306,3 +317,8 @@ $(".link").on("mouseleave",function(){
 	cursor.removeClass("active");
 	follower.removeClass("active");
 });
+
+
+// fixing the placholder scrolled
+
+ 
