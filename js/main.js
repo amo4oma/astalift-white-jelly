@@ -42,7 +42,7 @@ tl.to('.flwr-8' , 5 , {x: "-40%",y: "10%"}, "second" )
  tl.to( CSSRulePlugin.getRule("#sec-2::after"), {duration: 2, cssRule: {opacity : 0, display: "none"}});
 
 tl.from('.bottelAndDescrip-container' , 7 , {y: '50%' , opacity:0},"second")
- 
+ tl.to('.bottelAndDescrip-container',{zIndex: 9})
 tl.from(' .bottel' , 7 , {y: '60%' , opacity:0},"second")
 tl.to('.description' , 7 , {y: '-50%' , opacity:0})
 tl.to('.wj-top' , 5, { rotation:"-=25", y:"-40%", x:"-10%"}, "sixth")
@@ -321,4 +321,11 @@ $(".link").on("mouseleave",function(){
 
 // fixing the placholder scrolled
 
- 
+$('.tnc-click').click(function(){
+  $('.tnc').fadeIn();
+  console.log("clicked");
+})
+$('.tnc-close').click(function(){
+  $('.tnc').fadeOut();
+  console.log("out");
+})
