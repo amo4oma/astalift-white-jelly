@@ -99,7 +99,7 @@ html {
     width: 100%;
     height: 100vh;
     background: #f3eeea;
-    z-index: 9999;
+    z-index: 12;
     transition: all 0.4s ease;
   }
   .loader-page-container{
@@ -374,7 +374,7 @@ bottom: 0;
     top: 0;
     width: 50rem;
     z-index: -2;
-    transition: 0.2s;
+
 }
 .flwr-5{
     width: 50rem;
@@ -382,7 +382,7 @@ bottom: 0;
     right: 10%;
     top: -3%;
     z-index: -2;
-    transition: 0.2s;
+
 }
 .flwr-6{
     width: 20rem;
@@ -391,7 +391,7 @@ bottom: 0;
     left: 90%;  
     top: 43%;
     z-index: -2;
-    transition: 0.2s;
+
 }
 .leaf-2{
     position: absolute;
@@ -399,7 +399,7 @@ bottom: 0;
     left: -33px;
     width: 13rem;
     bottom: 35rem;
-    transition: 0.2s;
+
 }
 .flwr-8{
     position: absolute;
@@ -407,7 +407,7 @@ bottom: 0;
     width: 30rem;
     bottom: -30px;
     left: 6%;
-    transition: 0.2s;
+
  
 }
 .flwr-7{
@@ -416,7 +416,7 @@ bottom: 0;
     width: 38rem;
     bottom: -158px;
     left: 62%;
-    transition: 0.2s;
+
  
 }
 .bottelAndDescrip-container{

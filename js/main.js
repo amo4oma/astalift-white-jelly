@@ -151,55 +151,35 @@ $('.placeholder-row').mousemove(function(event){
 
 // -- placeholder page --//
 // flower Animation //
-$('.flowers').mousemove(function(event){
-  var moveX = (($(window).width() / 90) - event.pageX) * 0.01;
-  var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
-  $('.flwr-9').css('margin-left', moveX + 'px');
+$('#sec-2').mousemove(function(event){
+  var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
+  var moveY = (($('#sec-2').height() / 2) - event.pageY)  * 0.0005;
+  $('.flwr-9, .berry-1, .leaf-2, flwr-6').css('margin-left', moveX + 'px');
  
-  $('.flwr-9 ').css('margin-left', -moveX + 'px');
-  $('.flwr-9 ').css('margin-top', -moveY + 'px');
+  $('.flwr-9, .berry-1, .leaf-2, flwr-6 ').css('margin-left', -moveX + 'px');
+  $('.flwr-9, .berry-1, .leaf-2, flwr-6 ').css('margin-top', -moveY + 'px');
+}); 
+$('#sec-2').mousemove(function(event){
+  var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
+  var moveY = (($('#sec-2').height() / 2) - event.pageY)  * 0.0005;
+  $('.flwr-8, .flwr-7').css('margin-left', moveX + 'px');
+ 
+  $('.flwr-8, .flwr-7 ').css('margin-left', -moveX + 'px');
+  $('.flwr-8, .flwr-7 ').css('margin-top', -moveY + 'px');
+}); 
+$('#sec-2').mousemove(function(event){
+  var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
+  var moveY = (($('#sec-2').height() / 2) - event.pageY)  * 0.0005;
+  $('.flwr-5, .flwr-6').css('margin-left', moveX + 'px');
+ 
+  $('.flwr-5, .flwr-6 ').css('margin-left', -moveX + 'px');
+  $('.flwr-5, .flwr-6 ').css('margin-top', -moveY + 'px');
 }); 
 
-$('.section').mousemove(function(event){
+ 
+ 
 
-  var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
-  $('.flwr-5').css('margin-left', moveX + 'px');
  
-  $('.flwr-5 ').css('margin-left', -moveX + 'px');
-  $('.flwr-5 ').css('margin-top', -moveY + 'px');
-}); 
-$('.section').mousemove(function(event){
-  var moveX = (($(window).width() / 90) - event.pageX) * 0.01;
-  var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
-  $('.flwr-6').css('margin-left', moveX + 'px');
- 
-  $('.flwr-6 ').css('margin-left', -moveX + 'px');
-  $('.flwr-6 ').css('margin-top', -moveY + 'px');
-}); 
-$('.section').mousemove(function(event){
-  var moveX = (($(window).width() / 90) - event.pageX) * 0.01;
-  var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
-  $('.flwr-7').css('margin-left', moveX + 'px');
- 
-  $('.flwr-7 ').css('margin-left', -moveX + 'px');
-  $('.flwr-7 ').css('margin-top', -moveY + 'px');
-}); 
-$('.section').mousemove(function(event){
-  var moveX = (($(window).width() / 90) - event.pageX) * 0.01;
-  var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
-  $('.flwr-8').css('margin-left', moveX + 'px');
- 
-  $('.flwr-8 ').css('margin-left', -moveX + 'px');
-  $('.flwr-8 ').css('margin-top', -moveY + 'px');
-}); 
-$('.section').mousemove(function(event){
-  var moveX = (($(window).width() / 90) - event.pageX) * 0.01;
-  var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
-  $('.leaf-2').css('margin-left', moveX + 'px');
- 
-  $('.leaf-2 ').css('margin-left', -moveX + 'px');
-  $('.leaf-2 ').css('margin-top', -moveY + 'px');
-}); 
 // flower Animation ends //
 
 var swiper = new Swiper(".mySwiper", {
