@@ -1081,11 +1081,29 @@ bottom: 0;
      font-weight: bold;
      z-index: 5;
  }
+ .they-using-it-title{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 100px;
+     color: #d7063b;
+     font-family: Bodoni;
+     font-size: 40px;
+     font-weight: bold;
+ 
+ }
+ #faq-section{
+     position: relative;
+     z-index: 15;
+ }
  
  footer{
      background-color: #f5f5f5;
      padding-top: 20px;
 
+ }
+ #footer-a{
+     color: #000;
+     text-decoration: none;
  }
  #desktop-footer h4{
     color: #c7103f;
