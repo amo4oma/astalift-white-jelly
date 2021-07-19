@@ -163,12 +163,15 @@ h1 {
   height: 100%;
   background: #d7063b;
   border-radius: 50px;
-  animation: fill 5.5s ease;
+  animation: fill 4.5s ease;
 }
 
 @keyframes fill {
   0% {
     width: 0%;
+  }
+  50% {
+    width: 50%;
   }
   100% {
     width: 100%;

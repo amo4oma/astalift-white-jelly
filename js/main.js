@@ -214,11 +214,7 @@ $(window).on('load', function() {
     "transform": "translateY(-100%)",
     "transition-delay": "2s"
   });
-  $('.loader').css({
-    "opacity": "0",
-    "transform": "translate(-50%,-100%)",
-    "transition-delay": "2s"
-  });
+
 
   $('.loader_text_unit').each(function() {
     var $this = $(this),
@@ -226,7 +222,9 @@ $(window).on('load', function() {
 
     $({ countNum: $this.text()}).animate({
       countNum: countTo
-    },
+    }
+    
+    ,
 
     {
 
@@ -240,7 +238,11 @@ $(window).on('load', function() {
       }
     });
   });
-
+  $('.loader').css({
+    "opacity": "0",
+    "transform": "translate(-50%,-100%)",
+    "transition-delay": "2s"
+  });
 });
 
 // second swiper 
