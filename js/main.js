@@ -5,21 +5,24 @@ let tl = gsap.timeline({
         scrub: true,
   
         start : "top top",
-        end: "+=" + (window.innerHeight * 20),
+        end: "+=" + (window.innerHeight * 30),
         onLeave: () =>{
  
           $('#sec-2').css("overflow","hidden");
-          $('.navbar').fadeIn();
+          $('#desktop-nav').fadeIn();
         },
         onEnterBack: () =>{
-          $('.navbar').fadeOut();
+          $('#desktop-nav').fadeOut();
         }
     }
 })
 tl.set( CSSRulePlugin.getRule("#sec-2::after"), {duration: 3, cssRule: {display: "block"}});
-tl.fromTo('.title-1, .subtitle',  5, {scale:'1', opacity: '1'}, {scale :'10' , opacity:'0',display:"none"}, "first");
+tl.to('.title-1',5,{scale :'10', y:"-500%" , opacity:'0',display:"none"}, "first");
+tl.to('.subtitle',5,{scale :'10', y:"500%" , opacity:'0',display:"none"}, "first");
+ 
+ 
 tl.to('.berry-1' , 5 , {x: '-50%' , opacity:0 ,display:"none"} , "first")
-tl.to('.mouse' ,{  opacity:0 ,display:"none"} , "first")
+tl.to('.scrolling-dot' ,{  opacity:0 ,display:"none"} , "first")
 tl.to('.flwr-1, .sparkle-1 ' , 5 , {y: '-50%' , opacity:0, display:"none"} , "first")
 tl.to('.flwr-2' , 5 , {x: '50%' , y: "-50%", opacity:0, display:"none"} , "first")
 tl.to('.sparkle-4' , 5 , {x: '-50%' , opacity:0, display:"none"} , "first" )
@@ -39,18 +42,18 @@ tl.to('.flwr-6' , 5 , {y: "30%"}, "second" )
 tl.to('.flwr-7' , 5 , {x: "30%"}, "second" ) 
 tl.to('.flwr-8' , 5 , {x: "-40%",y: "10%"}, "second" ) 
 
- tl.to( CSSRulePlugin.getRule("#sec-2::after"), {duration: 2, cssRule: {opacity : 0, display: "none"}});
+ tl.to( CSSRulePlugin.getRule("#sec-2::after"), {duration: 2, cssRule: {opacity : 0, display: "none"}},"second");
 
-tl.from('.bottelAndDescrip-container' , 7 , {y: '50%' , opacity:0},"second")
+tl.from('.bottelAndDescrip-container' , 7 , {y: 100 , opacity:0},"third")
  tl.to('.bottelAndDescrip-container',{zIndex: 9})
-tl.from(' .bottel' , 7 , {y: '60%' , opacity:0},"second")
+ 
 tl.to('.description' , 7 , {y: '-50%' , opacity:0})
 tl.to('.wj-top' , 5, { rotation:"-=25", y:"-40%", x:"-10%"}, "sixth")
 tl.to('.discription-1-div' , 10, { y:"-10%" , opacity:0} , "sixth")
-tl.to('.discription-2-div' , 10, { opacity:1} , )
+tl.to('.discription-2-div' , 10, { y: -50, opacity:1} , )
  
 tl.to('.discription-2-div' , 10, { y:"-100%" , opacity:0} , )
-tl.to( CSSRulePlugin.getRule("#sec-2"), {duration: 1, cssRule: { backgroundImage : "none", backgroundColor: "#ffff" }});
+tl.to( CSSRulePlugin.getRule("#sec-2"), {duration: 5, cssRule: { backgroundImage : "none", backgroundColor: "#ffff" }});
 tl.to('.flwr-9' , 5 , {x: 40, y: -40, rotation:"-=45"},"seventh" ) 
 tl.to('.flwr-5' , 5 , { x: 130 , y: -120} ,"seventh" ) 
  
@@ -61,19 +64,23 @@ tl.to('.flwr-6' , 5 , {y: "-50%"},"seventh" )
 tl.to('.bottelAndDescrip-container' , 7 , {x: '13%'},"seventh")
 tl.to('.wj-top ' , 7 , {y: '-165%'}, "eighth")
 tl.to('.wj-bottom ' , 7 , {y: '75%'}, "eighth")
-tl.to('.jellysAndMessages-container ' , 7 , {y: '20%', opacity:1}, "eighth")
-tl.to('.left-description-messages, .right-description-messages ' , 7 , {y: '20%', opacity:1}, )
-tl.to('.left-description-messages, .right-description-messages ' , 7 , {y: '40%', opacity:0}, )
-tl.to('.left-description-messages-2, .right-description-message-2 ' , 7 , {y: '20%', opacity:1}, )
-tl.to('.left-description-messages-2, .right-description-message-2 ' , 7 , {y: '40%', opacity:0}, )
-tl.to('.left-description-messages-3, .right-description-message-3 ' , 7 , {y: '20%', opacity:1}, )
-tl.to('.left-description-messages-3, .right-description-message-3 ' , 7 , {y: '40%', opacity:0}, )
-tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 2.png"}}, )
-tl.to('.wj-bottom' , 5, {y : '-110%'},'up')
-tl.to('.flwr-7' , 5, {y : '-150%'},'up')
-tl.to('.flwr-8' , 5, {y : '-180%'},'up')
+tl.to('.jellysAndMessages-container ' , 7 , {y: '20%', opacity:1})
+tl.to('.left-description-messages, .right-description-messages ' , 10 , {y: '-20%', opacity:1}, )
+tl.to('.left-description-messages, .right-description-messages ' , 10 , {y: '-40%', opacity:0}, )
+tl.to('.left-description-messages-2, .right-description-message-2 ' , 10 , {y: '-20%', opacity:1}, )
+tl.to('.left-description-messages-2, .right-description-message-2 ' , 10 , {y: '-40%', opacity:0}, )
+tl.to('.left-description-messages-3, .right-description-message-3 ' , 10 , {y: '-20%', opacity:1}, )
+tl.to('.left-description-messages-3, .right-description-message-3 ' , 10 , {y: '-40%', opacity:0}, )
 
-tl.to('.jellysAndMessages-container, .flwr-9,.flwr-6,.flwr-5,.leaf-2, .wj-top',4, {opacity:0} , 'up')
+tl.to('.wj-bottom' , 5, {y : '-55%'},'up')
+tl.to('.flwr-7' , 5, {y : '-75%'},'up')
+tl.to('.flwr-8' , 5, {y : '-90%'},'up')
+tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 2.png"}}, )
+tl.to('.wj-bottom' , 5, {y : '-110%'},'up-2')
+tl.to('.flwr-7' , 5, {y : '-150%'},'up-2')
+tl.to('.flwr-8' , 5, {y : '-180%'},'up-2')
+
+tl.to('.jellysAndMessages-container, .flwr-9,.flwr-6,.flwr-5,.leaf-2, .wj-top',4, {y:"-200%", opacity:0} , 'up')
 tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 3.png"}})
 tl.to('.delivering-result-container', 4, {opacity:1})
 
@@ -82,30 +89,15 @@ tl.to('.flwr-7' , 5, {y : '-250%', opacity:0},'next-page')
 tl.to('.flwr-8' , 5, {y : '-280%', opacity:0},'next-page')
 tl.to('.delivering-result-container', 5, {y : '-230%', opacity:1},'next-page')
 tl.to('.skin-cells-container',5,{y:-100, opacity:1})
-tl.from('.first-message',5,{y:50, opacity:0}, )
+ 
 
-tl.to('.cell-1, .cell-2', 10, {y:150})
+tl.to('.cell-1, .cell-2', 5, {y:75},"cells-to-skin-1")
+tl.from('.first-message',5,{ y:75 ,opacity:0},"cells-to-skin-1")
 tl.to('.first-message',5,{ opacity:0})
-tl.from('.second-message',5,{y:50, opacity:0})
+tl.to('.cell-1, .cell-2', 5, {y:150},"cells-to-skin-2")
+tl.from('.second-message',5,{y:50, opacity:0},"cells-to-skin-2")
+tl.to('.skin-cells-container,.delivering-result-container',5,{y:-500, opacity:0})
  
-// tl.to('.bottel ' , 7 , {y: '50%'})
-// tl.to('.p1, .p2' , 7 , {y: '-50%' , opacity:1},"third")
-// tl.to('.p1, .p2' , 7 , {y: '-50%' , opacity:0},"forth")
-// tl.to('.p1, .p2' , 7 , {y: '-50%' , opacity:1},"fifth")
-// tl.to('.p1, .p2' , 7 , {y: '-50%' , opacity:1},"sixth")
-// tl.to('.p1, .p2' , 7 , {y: '50%' , opacity:0},"sixth")
-// tl.to('.coverup ' , 7 , {opacity: 0})
-// tl.to('.bottel ' , 7 , {y: '-100%'})
-// tl.to('.skin-img', 7 , {y:'-50%' , opacity: 1})
-// tl.to('#product-img' , 1.5 , {y: '-50%' , opacity:0})
-
- 
-//  gsap.to('.title-2, .subtitle',{
-//      scrollTrigger:{
-//          trigger: ".title-2",
-//          start: "cente"
-//      }
-//  })
  
 
     //  HOW TO USE ANIMATION STARTS 
@@ -119,19 +111,19 @@ let tl2 = gsap.timeline({
       end: "+=" + (window.innerHeight * 8),
     }
       });
-      tl2.from('.step-1', 5, {y: 100, opacity:0 })
-      tl2.to('.step-1', 5, {opacity:0 })
+      tl2.from('.step-1', 1, {y: 100, opacity:0 })
+      tl2.to('.step-1', 1, {opacity:0 })
       tl2.to('.flwres-frame', 0.5 , {x: -300}, 'frist')
-      tl2.to('.girl-frame', 1 , {x: -300}, 'frist')
-      tl2.from('.step-2', 5, {y: 100, opacity:0 })
-      tl2.to('.step-2', 5, {opacity:0 })
-      tl2.to('.flwres-frame', 0.5 , {x: -600}, 'second')
-      tl2.to('.girl-frame', 1 , {x: -670}, 'second')
-      tl2.from('.step-3', 5, {y: 100, opacity:0 })
-      tl2.to('.step-3', 5, {opacity:0 })
-      tl2.to('.flwres-frame', 0.5 , {x: -900}, '3rd')
-      tl2.to('.girl-frame', 1 , {x: -1050}, '3rd')
-      tl2.from('.step-4', 2, {y: 100, opacity:0 })
+      tl2.to('.girl-frame', 1 , {x: -450}, 'frist')
+      tl2.from('.step-2', 1, {y: 100, opacity:0 }, 'frist')
+      tl2.to('.step-2', 1, {opacity:0 })
+      tl2.to('.flwres-frame', 0.5 , {x: -500}, 'second')
+      tl2.to('.girl-frame', 1 , {x: -970}, 'second')
+      tl2.from('.step-3', 1, {y: 100, opacity:0 }, 'second')
+      tl2.to('.step-3', 1, {opacity:0 })
+      tl2.to('.flwres-frame', 0.5 , {x: -800}, '3rd')
+      tl2.to('.girl-frame', 1 , {x: -1450}, '3rd')
+      tl2.from('.step-4', 2, {y: 100, opacity:0 }, '3rd')
  
 
 // HOW TO USE ANIMATION ENDS 
@@ -141,31 +133,41 @@ let tl2 = gsap.timeline({
 var windowWidth = $(window).width();
 
 $('.placeholder-row').mousemove(function(event){
-  var moveX = (($(window).width() / 90) - event.pageX) * 0.01;
+  var moveX = (($(window).width() / 50) - event.pageX) * 0.01;
   var moveY = (($(window).height() / 50) - event.pageY) * 0.02;
   $('.placeholder-flower-1').css('margin-left', moveX + 'px');
- 
+  $('.placeholder-flower-1').css('margin-top', -moveY + 'px');
   $('.placeholder-flower-2').css('margin-left', -moveX + 'px');
+  $('.placeholder-flower-2').css('margin-right', -moveX + 'px');
   $('.placeholder-flower-2').css('margin-top', -moveY + 'px');
 }); 
+
+$('.jelly-drops-container').mousemove(function(event){
+  var mX = (($(window).width() / 5) - event.pageX) * 0.01;
+  var mY = (($(window).height()/10) - event.pageY) * 0.00002 ;
+  $('.jelly-drops-container ').css('right', mX + 'px');
+}); 
+
+
 
 // -- placeholder page --//
 // flower Animation //
 $('#sec-2').mousemove(function(event){
   var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
-  var moveY = (($('#sec-2').height() / 2) - event.pageY)  * 0.0005;
-  $('.flwr-9, .berry-1, .leaf-2, flwr-6').css('margin-left', moveX + 'px');
+  var moveY = (($('#sec-2').height() / 2) - event.pageY)  * 0.005;
+  $('.flwr-9, .leaf-2, flwr-6').css('margin-left', moveX + 'px');
  
-  $('.flwr-9, .berry-1, .leaf-2, flwr-6 ').css('margin-left', -moveX + 'px');
-  $('.flwr-9, .berry-1, .leaf-2, flwr-6 ').css('margin-top', -moveY + 'px');
+  $('.flwr-9, .leaf-2, flwr-6 ').css('margin-left', -moveX + 'px');
+  $('.flwr-9, .leaf-2, flwr-6 ').css('margin-top', moveX + 'px');
 }); 
 $('#sec-2').mousemove(function(event){
   var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
-  var moveY = (($('#sec-2').height() / 2) - event.pageY)  * 0.0005;
+  var moveY = (100 - event.pageY)  * 0.0005;
   $('.flwr-8, .flwr-7').css('margin-left', moveX + 'px');
  
   $('.flwr-8, .flwr-7 ').css('margin-left', -moveX + 'px');
-  $('.flwr-8, .flwr-7 ').css('margin-top', -moveY + 'px');
+  $('.flwr-8, .flwr-7 ').css('margin-top', moveX + 'px');
+  
 }); 
 $('#sec-2').mousemove(function(event){
   var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
@@ -173,7 +175,7 @@ $('#sec-2').mousemove(function(event){
   $('.flwr-5, .flwr-6').css('margin-left', moveX + 'px');
  
   $('.flwr-5, .flwr-6 ').css('margin-left', -moveX + 'px');
-  $('.flwr-5, .flwr-6 ').css('margin-top', -moveY + 'px');
+  $('.flwr-5, .flwr-6 ').css('margin-top', -moveX + 'px');
 }); 
 
  
@@ -185,12 +187,13 @@ $('#sec-2').mousemove(function(event){
 var swiper = new Swiper(".mySwiper", {
   slidesPerView:2,
   centeredSlides: true,
-  spaceBetween: 100,
+  spaceBetween: 400,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+ 
   nextButton: '.arrow-next',
   prevButton: '.swiper-button-prev',
 });
@@ -227,7 +230,7 @@ $(window).on('load', function() {
 
     {
 
-      duration: 300,
+      duration: 1000,
       easing:'linear',
       step: function() {
         $this.text(Math.floor(this.countNum));
@@ -308,4 +311,25 @@ $('.tnc-click').click(function(){
 $('.tnc-close').click(function(){
   $('.tnc').fadeOut();
   console.log("out");
+})
+
+
+// mobile navigator
+$(document).ready(function(){
+  $('#slider-close').click(function(){
+    $('.slider').toggle();
+  })
+  $('#slider-open').click(function(){
+    $('.slider').toggle();
+  })
+})
+
+
+$('.fas').click(function(){
+  if ($('fas').hasClass('fa-plus')){
+ $('fa-plus').css('transform','rotate(90deg)','opacity, 0')
+  } else if ($('fas').hasClass('fa-minus')){
+    $('fa-minus').css('transform','rotate(90deg)','opacity, 0')
+  }
+  
 })

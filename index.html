@@ -34,7 +34,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light  ">
+  <nav id="desktop-nav" class="navbar navbar-expand-lg navbar-light  ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="logo" src="./images/Astalift logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -53,6 +53,9 @@
             <a class="nav-link" href="#sec-4">Application</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#faq-section">FAQs</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link " href="https://astalift.com.sg/product/white-jelly-aquarysta-40g-60g-refill/"
               tabindex="-1" target="_blank">SHOP NOW </a>
           </li>
@@ -60,6 +63,43 @@
       </div>
     </div>
   </nav>
+  <nav id="mobile-nav" class="navbar">
+    <div class="container-fluid">
+      <div class="d-inline">
+          <i id="slider-open" class="fas fa-bars"></i>
+      <a class="navbar-brand" href="#"><img class="logo" src="./images/Astalift logo.png" alt=""></a>
+   
+      </div>
+    
+      <div class="slider">
+        <div class="slider-header  d-flex align-items-center">
+          <i id="slider-close" class="fas fa-times"></i>
+          <a class="navbar-brand" href="#"><img class="" width="200px" src="./images/Astalift logo.png" alt=""></a>
+        </div>
+        <ul class="slider-ul">
+          <li class="nav-item">
+            <a class="slider-link " aria-current="page" onclick="topFunction()"  >White Jelly Aquarysta</a>
+          </li>
+          <li class="nav-item">
+            <a class="slider-link" href="#sec-3">Benefits </a>
+          </li>
+          <li class="nav-item">
+            <a class="slider-link" href="#sec-4">Application</a>
+          </li>
+          <li class="nav-item">
+            <a class="slider-link " href="https://astalift.com.sg/product/white-jelly-aquarysta-40g-60g-refill/"
+              tabindex="-1" target="_blank">SHOP NOW </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div  class="mobile-container">
+    <div class="hearo-banner-mobile d-flex flex-column justify-content-center align-items-center">
+        <h1 class="mobile-hearo-title">Unveil Your Skin&#8217;s Radiance</h1>
+        <p class="mobile-hearo-subtitel">THE ULTIMATE SKIN BRIGHTENING BOOSTER</p>
+    </div>
+  </div>
   <div id="main-container">
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -77,12 +117,16 @@
         </div>
 
         <div class="main-title d-flex flex-column justify-content-center align-items-center">
-          <h1 class="title-1 text-center">Unveil Your skin's Radiance</h1>
-          <h5 class="subtitle text-uppercase">The ultimate skin brightening booster.</h5>
+          <h1 class="title-1 text-center">Unveil Your Skin&#8217;s Radiance</h1>
+          <h5 class="subtitle text-uppercase">The ultimate skin brightening booster</h5>
         </div>
-        <div class="mouse">
-          <h3 class="scroll-icon">Scroll Down</h3>
-        </div>
+        <div class="scrolling-dot">
+          <img src="./images/Scrolling Dot.gif" alt="">
+          <h3 class="scroll-icon-text w-100 ">Unveil the White Jelly Aquarysta</h3>
+          </div>
+
+        
+       
 
         <div class="">
           <img class="hero-flowers-bottom flwr-8" src="images/flowers-5-10/Flower 8.png" alt="">
@@ -113,9 +157,10 @@
               leave your skin radiant and bouncy to the touch.</p>
             <a href="https://astalift.com.sg/product/white-jelly-aquarysta-40g-60g-refill/" type="button" class="btn btn-danger" target="_blank">SHOP NOW</a>
           </div>
-          <div class="col-3 offset-1 discription-2-div">
+          <div class="col-4 offset-1 discription-2-div">
             <h1 class="hero-b-title">Rediscover Your Skin’s Intrinsic Beauty</h1>
             <h5 class="hero-subtitle">White Jelly Aquarysta – an evolution from the iconic Aquarysta line.</h5>
+            <br>
             <p class="dis-1">
               Packed with even more exclusive pioneering skin rejuvenating technology and ingredients that boost your
               skin’s radiance & suppleness for a youthful, healthy look.
@@ -153,7 +198,7 @@
         <div class="col-4 left-description-messages-3">
           <h1 class="left-description-messages-title text-end">3 Types of Collagen</h1>
           <p class="left-description-messages-subtitle text-end">Replenishes collagen & promotes natural collagen
-            production, protects against loss of moisture for firm and supple skin..</p>
+            production, protects against loss of moisture for firm and supple skin.</p>
         </div>
 
         <div class="col-4 right-description-messages">
@@ -198,7 +243,7 @@
             </div>
             <div class="second-message">
               <h1 class="skin-title">Double Human-Type Nano-Ceramides</h1>
-              <p class="skin-subtitle w-75">Smallest ceramide molecules that penetrate deep into skin to replenish
+              <p class="skin-subtitle">Smallest ceramide molecules that penetrate deep into skin to replenish
                 ceramides and lock moisture.</p>
             </div>
 
@@ -249,7 +294,7 @@
     <section>
       <div id="sec-4" class="section container-fluid">
 
-        <h1 class="how-to-use">How to use</h1>
+        <h1 class="how-to-use">How To Use</h1>
         <div class="frames">
           <img class="flwres-frame" src="./images/how-to-use/Flowers.png" alt="">
           <img class="girl-frame" src="./images/how-to-use/Girl.png" alt="">
@@ -293,44 +338,43 @@
                 <div class="form-group">
                   <label class="form-label" id="nameLabel" for="name"> <img class="contact-icon name-icon"
                       src="./images/contact/Name Icon.png" alt=""></label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="First Name" tabindex="1">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="First Name" required tabindex="1">
                 </div>
 
                 <div class="form-group">
                   <label class="form-label" id="nameLabel" for="name"></label>
-                  <input type="name" class="form-control" id="name" name="name" placeholder="Last Name" tabindex="2">
+                  <input type="name" class="form-control" id="name" name="name" placeholder="Last Name" required tabindex="2">
                 </div>
 
                 <div class="form-group">
                   <label class="form-label" id="contact" for="contact"><img class="contact-icon phone-icon"
                       src="./images/contact/Phone Icon.png" alt=""></label>
-                  <input type="number" class="form-control" id="conatct" name="contact" placeholder="Contact Number"
+                  <input type="tel" class="form-control" id="conatct" name="contact" required placeholder="Contact Number"
                     tabindex="3">
                 </div>
 
                 <div class="form-group">
                   <label class="form-label" id="email" for="email"><img class="contact-icon email-icon"
                       src="./images/contact/Email Icon.png" alt=""></label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="3">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required tabindex="3">
                 </div>
                 <div class="check-container">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
-                      I consent for my personal data to be collected and processed for the use of this Astalift
-                      Marketing
-                      Campaign.
+                      I consent for my personal data to be collected and processed for the use of this Astalift Marketing Campaign.
                       <br>
                       <br>
-                      All personal data provided to Astalift will be processed in accordance with the Singapore Personal
-                      Data Protection Act 2012. Astalift will never share your personal data with any third parties
-                      except
-                      those engaged by ys in order to provide our products and services to you under this Campaign.
+                     
+                      All personal data provided to Astalift will be processed in accordance with the Singapore Personal Data Protection Act 2012. Astalift will never share your personal data with any third parties except those engaged by ys in order to provide our products and services to you under this Campaign.
+                      
                     </label>
                   </div>
+                  <br>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
+                      
                       I consent to join Astalift mailing list and receive marketing & promotional news from Astalift.
 
                     </label>
@@ -338,7 +382,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="form-btn btn">Send Message</button>
+                  <button type="submit" class="form-btn btn">Get Your Free Sample</button>
 
                 </div>
                 <h5 class="tnc-title">Terms & Conditions apply. <a class="tnc-click">Click Here</a> </h5>
@@ -382,23 +426,15 @@
 <div class="section d-flex flex-column align-items-center">
  <div class="swiper-container mySwiper  ">
  
-      <div class="swiper-wrapper">
-        <div class="swiper-slide video-slide">
-          <a href="">
-            <img class="image-of-vedio" src="./images/Video 1.jpg" alt="">
-          </a>
-        </div>
+      <div class="swiper-wrapper frist-swiper">
+       
         <div class="swiper-slide">
           <a href="">
             <img class="image-of-vedio" src="./images/Video 1.jpg" alt="">
           </a>
         </div>
-        <div class="swiper-slide"> <a href="">
-            <img class="image-of-vedio" src="./images/Video 1.jpg" alt="">
-          </a> </div>
-        <div class="swiper-slide"> <a href="">
-            <img class="image-of-vedio" src="./images/Video 1.jpg" alt="">
-          </a> </div>
+    
+  
 
       </div>
 
@@ -425,38 +461,38 @@
         <div class="swiper-slide col-md-4 text-center d-flex flex-column">
           <img class="other-product" src="./images/youMayAlso/Astalift Drink Whiteshield.png" alt="">
 
-          <div class="mt-5">
-            <h4>Astalift Drink Whiteshield</h4>
-            <h6>50ml x 10 btls</h6>
+          <div class="products-description">
+            <h4>Astalift Drink Whiteshield <br><span style="opacity: 0;">AM</span></h4>
+            <h5>50ml x 10 btls</h5>
             <h6>$50.00</h6>
-            <a href="" class="btn buy-now-btn" target="_blank">BUY NOW</a>
+            <a href="" class="btn buy-now-btn " target="_blank">BUY NOW</a>
           </div>
         </div>
         <div class="swiper-slide col-md-4 text-center d-flex flex-column">
           <img class="other-product" src="./images/youMayAlso/D-UV Clear White Solution.png" alt="">
-          <div class="mt-5">
-            <h4>Astalift Drink Whiteshield</h4>
-            <h6>50ml x 10 btls</h6>
-            <h6>$50.00</h6>
+          <div class="products-description">
+            <h4 class=" text-center">D-UV Clear White Solution<br> SPF50+ PA++++30g</h4>
+            <h5>20g</h5>
+            <h6>$72.00</h6>
             <a href="" class="btn buy-now-btn" target="_blank">BUY NOW</a>
           </div>
         </div>
         <div class="swiper-slide col-md-4 text-center d-flex flex-column align-items-center">
           <img class="other-product red-product" src="./images/youMayAlso/Renewal Jelly Aquarysta T.png" alt="">
-          <div class="mt-5">
-            <h4>Astalift Drink Whiteshield</h4>
-            <h6>50ml x 10 btls</h6>
-            <h6>$50.00</h6>
-            <a href="" class="btn buy-now-btn" target="_blank">BUY NOW</a>
+          <div class="products-description">
+            <h4 class="renwal-product">Renewal Jelly Aquarysta T <br><span style="opacity: 0;">AM</span></h4>
+            <h5>40g | 60g | Refil</h5>
+            <h6>$141.00 – $222.00</h6>
+            <a href="" class="btn buy-now-btn " target="_blank">BUY NOW</a>
           </div>
         </div>
         <div class="swiper-slide col-md-4 text-center d-flex flex-column">
           <img class="other-product" src="./images/youMayAlso/White Essence Infilt H.png" alt="">
-          <div class="mt-5">
-            <h4>Astalift Drink Whiteshield</h4>
-            <h6>50ml x 10 btls</h6>
-            <h6>$50.00</h6>
-            <a href="" class="btn buy-now-btn" target="_blank">BUY NOW</a>
+          <div class="products-description">
+            <h4>White Essence Infilt H <br><span style="opacity: 0;">AM</span></h4>
+            <h5>30ml (Refill) | 30ml</h5>
+            <h6>$108.00 – $115.00</h6>
+            <a href="" class="btn buy-now-btn " target="_blank">BUY NOW</a>
           </div>
         </div>
       </div>
@@ -486,8 +522,9 @@
           </div>
           <div class="container"> 
                  <div class="loader row mt-4">
+                   <p class="placeholder-zero">0</p>
           <div class="loader_bar col-5" id="loader_bar"></div>
-          <p class="loader_text col-2" id="loader_text"><span class="loader_text_unit" data-count="100">0</span><span>%</span></p>
+          <p class="loader_text col-2" id="loader_text"><span class="loader_text_unit" data-count="100">0</span><span></span></p>
         </div></div>
       
       </div>
@@ -613,7 +650,9 @@
                 <div id="mc_embed_signup_scroll">
                   <div class="mc-field-group input-group mb-3">
                     <input type="email" placeholder="Your Email" value="" name="EMAIL"
-                      class="required email form-control bg-transparent  newsletter" id="mce-EMAIL"><input type="submit"
+                      class="required email form-control bg-transparent  newsletter" id="mce-EMAIL">
+                      
+                      <input style="width: 56px;" type="submit" 
                       value="Go" name="subscribe" placeholder="Your Email" id="mc-embedded-subscribe"
                       class="button subBtn btn btn-white bg-white border-0">
                   </div>
@@ -643,7 +682,7 @@
           </div>
         </div>
       </div>
-      <p class="text-center mt-3">© FUJIFILM Corporation</p>
+      <p class="text-center mt-3 mb-0">© FUJIFILM Corporation</p>
     </div>
     <!-- -------------------------------------mobile footer--------------------- -->
 
@@ -671,9 +710,13 @@
       const item = e.currentTarget;
       const icons = item.querySelector('.fas');
       if (icons.classList.contains('fa-plus')) {
-        icons.classList.replace('fa-plus', 'fa-minus')
+        icons.classList.toggle('ani')
+        icons.classList.replace('fa-plus', 'fa-minus');
+       
       } else {
         icons.classList.add('fa-plus')
+        icons.classList.toggle('ani')
+       
       }
       const answerContainers = item.getElementsByClassName('faq-answer-container');
       if (answerContainers.length > 0) {
