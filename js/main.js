@@ -10,6 +10,9 @@ let tl = gsap.timeline({
  
           $('#sec-2').css("overflow","hidden");
           $('#desktop-nav').fadeIn();
+          $('html, body').animate({
+            scrollTop: $("#sec-3").offset().top
+          });
         },
         onEnterBack: () =>{
           $('#desktop-nav').fadeOut();
@@ -96,14 +99,15 @@ tl.from('.first-message',5,{ y:75 ,opacity:0},"cells-to-skin-1")
 tl.to('.first-message',5,{ opacity:0})
 tl.to('.cell-1, .cell-2', 5, {y:150},"cells-to-skin-2")
 tl.from('.second-message',5,{y:50, opacity:0},"cells-to-skin-2")
-tl.to('.skin-cells-container,.delivering-result-container',5,{y:-500, opacity:0})
+tl.to('.skin-cells-container',5,{y:-200, opacity:0},'last')
+tl.to('.delivering-result-container',5,{y:'-320%', opacity:0, display:'none'},'last')
  
  
 
     //  HOW TO USE ANIMATION STARTS 
 let tl2 = gsap.timeline({
   scrollTrigger :{
-      trigger : "#sec-4",
+      trigger : "#how-to-use-section",
       pin: true, 
       scrub: true,
  
@@ -211,9 +215,10 @@ $('#prev').click(function(e){
 // PLACEHOLDER PAGE STARTS 
 $(window).on('load', function() {
   $('#preloader').css({
-    "transform": "translateY(-100%)",
-    "transition-delay": "2s"
+    "transform": "translateY(-200%)",
+    "transition-delay": "2s",
   });
+ 
 
 
   $('.loader_text_unit').each(function() {
@@ -243,6 +248,7 @@ $(window).on('load', function() {
     "transform": "translate(-50%,-100%)",
     "transition-delay": "2s"
   });
+ 
 });
 
 // second swiper 
