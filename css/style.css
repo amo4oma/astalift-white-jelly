@@ -154,16 +154,16 @@ h1 {
   border-radius: 50px;
 }
 
-.loader .loader_bar:before {
+.loader_animate {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
   background: #d7063b;
   border-radius: 50px;
-  animation: fill 2.5s ease;
+ 
 }
 
 @keyframes fill {
@@ -1309,7 +1309,7 @@ footer {
     position: relative;
     margin-top: -70px;
     height: 100vh;
-    width: 65%;
+    width: 78%;
     background-color: #f3eeea;
     color: #c7103f;
     margin-left: -8px;
@@ -1341,14 +1341,18 @@ footer {
     text-align: left;
     list-style-type: none;
     margin-top: 24px;
+
   }
   .slider-link {
     color: #d7063b;
     text-decoration: none;
     font-size: 24px;
     font-family: Mulish;
-  }
  
+  }
+  .slider-link .nav-item{
+    border-bottom:1px #000 solid ;
+  }
   .slider-header {
     background-color: #d7063b;
     height: 84px;
@@ -1390,6 +1394,29 @@ footer {
     text-align: center;
     line-height: 1.5;
     width: 75%;
+  }
+  .sec-2-mobile{
+    background-color: #F3EEEA;
+  }
+  .sec-2-mobile h1{
+    text-align: center;
+    color: #d7063b;
+    font-family: Mulish;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .sec-2-mobile h3{
+    text-align: center;
+    color: #d7063b;
+    font-family: Mulish;
+    font-size: 20px;
+  }
+  .sec-2-mobile p{
+    text-align: center;
+    color: #d7063b;
+    font-family: Mulish;
+    font-weight: 500;
+    font-size: 15px;
   }
   .arrow-next {
     width: 100px;

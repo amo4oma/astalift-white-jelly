@@ -213,44 +213,62 @@ $('#prev').click(function(e){
 });
  
 // PLACEHOLDER PAGE STARTS 
-$(window).on('load', function() {
+// $(window).on('load', function() {
+//   $('#preloader').css({
+//     "transform": "translateY(-200%)",
+//     "transition-delay": "2s",
+//   });
+ 
+
+
+//   $('.loader_text_unit').each(function() {
+//     var $this = $(this),
+//         countTo = $this.attr('data-count');
+
+//     $({ countNum: $this.text()}).animate({
+//       countNum: countTo
+//     }
+    
+//     ,
+
+//     {
+
+//       duration: 1000,
+//       easing:'linear',
+//       step: function() {
+//         $this.text(Math.floor(this.countNum));
+//       },
+//       complete: function() {
+//         $this.text(this.countNum);
+//       }
+//     });
+//   });
+//   $('.loader').css({
+//     "opacity": "0",
+//     "transform": "translate(-50%,-100%)",
+//     "transition-delay": "2s"
+//   });
+ 
+// });
+
+
+$(window).on('load', function (){
+  
+  var count = 0;
+  var counting = setInterval(function(){
+      if(count < 101) {
+          $('.loader_text_unit').text(count);
+          $('.loader_animate').css('width', count + '%')
+          count++
+      } else {
+          clearInterval(counting)
+      }
+  }, 10);
   $('#preloader').css({
     "transform": "translateY(-200%)",
     "transition-delay": "2s",
   });
- 
-
-
-  $('.loader_text_unit').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    }
-    
-    ,
-
-    {
-
-      duration: 1000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-      }
-    });
-  });
-  $('.loader').css({
-    "opacity": "0",
-    "transform": "translate(-50%,-100%)",
-    "transition-delay": "2s"
-  });
- 
-});
-
+})
 // second swiper 
 
 var screenWidth = $( window ).width();
