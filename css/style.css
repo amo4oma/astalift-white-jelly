@@ -1446,6 +1446,12 @@ footer {
     position: relative;
   }
 }
+
+@media screen and (max-height: 740px) {
+  .contact-container{
+    height: 200vh;
+  }
+}
 #video-popup-container {
   display: none;
   position: fixed;
