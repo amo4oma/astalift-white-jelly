@@ -195,7 +195,7 @@ h1 {
 /* placeholder page ends */
 #sec-2 {
   height: 100vh;
-  width: 100%;
+  width: 100% !important;
   position: relative;
   display: flex;
   align-items: center;
@@ -203,13 +203,20 @@ h1 {
   justify-content: center;
   background-color: #f3eeea;
   transition: background-color 1s;
-  background-image: url(../images/hearo2/Red\ Glow\ 1.png),
-    url(../images/hearo2/White\ Glow\ 1.png),
-    url(../images/hearo2/White\ Glow\ 2.png),
-    url(../images/hearo2/Red\ Glow\ 2.png);
-    background-size: cover;
-  background-repeat: no-repeat;
   transition: 1s;
+}
+#sec-2::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: inherit;
+  background-image: url(../images/hearo2/Red\ Glow\ 1.png),
+  url(../images/hearo2/White\ Glow\ 1.png),
+  url(../images/hearo2/White\ Glow\ 2.png),
+  url(../images/hearo2/Red\ Glow\ 2.png);
+  background-size: 100% 100%;
+background-repeat: no-repeat;
+z-index: -20;
 }
 #sec-2::after {
   content: "";
