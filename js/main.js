@@ -216,7 +216,7 @@ $('#prev').click(function(e){
 // PLACEHOLDER PAGE STARTS 
 
 
-$(window).on('load', function (){
+$(window).on('click', function (){
   
   var count = 0;
   var counting = setInterval(function(){
