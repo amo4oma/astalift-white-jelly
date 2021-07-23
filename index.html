@@ -14,7 +14,7 @@
     href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=1.1">
 
   <title>white jelly</title>
 
@@ -34,7 +34,7 @@
 </head>
 
 <body>
-  <nav id="desktop-nav" class="navbar navbar-expand-lg navbar-light  ">
+  <nav id="desktop-nav" class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="logo" src="./images/Astalift logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -94,13 +94,13 @@
       </div>
     </div>
   </nav>
-  <div  class="mobile-container">
+  <div  class="mobile-container container-fluid p-0">
     <div class="hearo-banner-mobile d-flex flex-column justify-content-center align-items-center">
         <h1 class="mobile-hearo-title">Unveil Your Skin&#8217;s Radiance</h1>
         <p class="mobile-hearo-subtitel">THE ULTIMATE SKIN BRIGHTENING BOOSTER</p>
     </div>
     <div class="sec-2-mobile d-flex flex-column justify-content-center align-items-center">
-      <img width="120%" src="./images/mobile/03_Bottle01.jpg" alt="">
+      <img width="100%" src="./images/mobile/03_Bottle01.jpg" alt="">
       <div class="p-5">
         <h1>White Jelly Aquarysta</h1>
       <p>Enriched with a cocktail of glow-inducing ingredients that rejuvenate and moisturise, to leave your skin radiant and bouncy to the touch.</p>
@@ -326,7 +326,7 @@
       <div id="sec-3" class="">
         <div class="container benifits-container">
           <div class="row mobile-flex">
-            <div class="col-lg-5 offset-lg-1 col-sm-12 d-flex flex-column justify-content-center  ">
+            <div class="col-lg-5 offset-lg-1 col-sm-12 d-flex flex-column justify-content-center flex-mobile">
               <h1 class="benifet-title text-start">A Soft Scent That Whispers</h1>
               <p class="benifet-subtitle text-start">Laced with a delicate blend of Damask rose and Green Floral
                 freshness for a sensual, soft, and subtly sweet scent.</p>
@@ -339,14 +339,14 @@
             <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center">
               <img class="gif-icon" src="images/gifs/Icon 2.gif" alt="">
             </div>
-            <div class="col-lg-5 offset-lg-1 d-flex  flex-column justify-content-center align-content-center">
+            <div class="col-lg-5 offset-lg-1 d-flex  flex-column justify-content-center align-content-center flex-mobile">
               <h1 class="benifet-title">Feels Like Your Second Skin</h1>
               <p class="benifet-subtitle">Water-rich jelly texture perfect for the skin to drink up.</p>
 
             </div>
           </div>
           <div class="row mobile-flex">
-            <div class="col-lg-5 offset-lg-1 col-sm-12 d-flex flex-column justify-content-center   ">
+            <div class="col-lg-5 offset-lg-1 col-sm-12 d-flex flex-column justify-content-center flex-mobile">
               <h1 class="benifet-title text-start">Remodels Itself As It Reveals Your Skin’s Clarity</h1>
               <p class="benifet-subtitle text-start">Restores its own appearance after every use.</p>
             </div>
@@ -392,7 +392,41 @@
 
       </div>
     </section>
-
+    <div class="swiper-container mobile-how-to-use-slider row">
+      <h1 class="how-2-use-mobile-title">How To Use</h1>
+      <i class="fas fa-arrow-right"></i>
+      <div class="swiper-wrapper">
+      
+        <div class="swiper-slide text-center d-flex flex-column">
+          <img class="how-2-use-image" src="./images/mobile/14_Step01.png" alt="">
+          <div class="step-1-mobile  d-flex flex-column align-items-center">
+            <h4 class="step-text-1">Step 1</h4>
+            <p class="how-2-use-mobile-d">For day & night. Scoop the jelly with the spatula provided, and place it onto your palm. Then spread evenly across your cleansed face.</p>
+          </div>
+        </div>
+        <div class="swiper-slide text-center d-flex flex-column">
+          <img class="how-2-use-image" src="./images/mobile/15_Step02.png" alt="">
+          <div class="step-2-mobile d-flex flex-column align-items-center">
+            <h4 class="step-text-1">Step 2</h4>
+            <p class="how-2-use-mobile-d">Press Jelly firmly into skin to ensure absorption. Click here to learn m</p>
+          </div>
+        </div>
+        <div class="swiper-slide text-center d-flex flex-column">
+          <img class="how-2-use-image" src="./images/mobile/16_Step03.png" alt="">
+          <div class="step-3-mobile d-flex flex-column align-items-center">
+            <h4 class="step-text-1">Step 3</h4>
+            <p class="how-2-use-mobile-d">Apply lotion immediately after applying the jelly for a moist-up effect.</p>
+          </div>
+        </div>
+        <div class="swiper-slide text-center d-flex flex-column">
+          <img class="how-2-use-image" src="./images/mobile/17_Step04.png" alt="">
+          <div class="step-4-mobile d-flex flex-column align-items-center">
+            <h4 class="step-text-1">Step 4</h4>
+            <p class="how-2-use-mobile-d">Follow through with serum and cream for best results.</p>
+          </div>
+        </div>
+        </div>
+    </div>
     <section id="contact">
       <div class="container-fluid contact-container ">
         <div class="container">
@@ -426,7 +460,7 @@
                   <input type="email" class="form-control" id="email" name="email" placeholder="Email" required tabindex="3">
                 </div>
                 <div class="check-container">
-                  <div class="form-check">
+                  <div id="checkbox-1" class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
                       I consent for my personal data to be collected and processed for the use of this Astalift Marketing Campaign.
@@ -452,6 +486,11 @@
                   <button type="submit" class="form-btn btn">Get Your Free Sample</button>
 
                 </div>
+                <div class="mobile-tnc">
+                   <p class="by-clicking">By clicking the "Get Your Free Sample" button you are accepting your personal data to be collected and processed for the use of this Astalift Marketing Campaign.</p>
+                   <h5 class="tnc-pp">Terms of Service & Privacy Policy</h5>
+                </div>
+               
                 <h5 class="tnc-title">Terms & Conditions apply. <a class="tnc-click">Click Here</a> </h5>
               </form><!-- End form -->
 
@@ -459,7 +498,7 @@
 
           </div>
 
-          <div class="tns-container col-6 offset-2">
+          <div class="tns-container col-lg-6 offset-lg-2 col-sm-12">
 
             <div class="tnc">
               <span class="tnc-close"><i class="fas fa-times"></i></span>
@@ -502,7 +541,7 @@
  
       <div class="swiper-wrapper frist-swiper">
        
-        <div class="swiper-slide">
+        <div class="swiper-slide video-slide-mobile">
           <div class="vpop" data-type="youtube" data-id=""
                                                 data-autoplay='true'>
           <a href="">
@@ -761,7 +800,119 @@
       <p class="text-center mt-3 mb-0">© FUJIFILM Corporation</p>
     </div>
     <!-- -------------------------------------mobile footer--------------------- -->
+    <div class="mobile-footer">
+      <div id="footer-mobile" class="faq-container footer-mobile" onclick="onClickFooterItem(event)">
+          <div class="faq-question-container  ">
+              <h4 class="li-footer-header">FEATURED</h4>
+              <i class="fas fa-angle-down "></i>
+            
+          </div>
+          <div class="faq-answer-container">
+              <div class="d-flex flex-column">
+                  <a class="mobile-footer-a"> Best Seller</a>
+                  <a class="mobile-footer-a">Shop</a>
+                  <a class="mobile-footer-a">Makeup</a>
+                  <a class="mobile-footer-a">Facial</a>
+                  <a class="mobile-footer-a">Online Promotion</a>
+              </div>
 
+          </div>
+      </div>
+      <div id=" footer-mobile" class="faq-container footer-mobile" onclick="onClickFooterItem(event)">
+          <div class="faq-question-container">
+              <h4 class="li-footer-header">ABOUT US</h4>
+              <i class="fas fa-angle-down "></i>
+          </div>
+          <div class="faq-answer-container">
+
+              <div class=" d-flex flex-column li-footer">
+
+                  <a class="mobile-footer-a">Our Story</a>
+                  <a class="mobile-footer-a">Contact Us</a>
+                  <a class="mobile-footer-a">Store Locator</a>
+              </div>
+
+
+          </div>
+      </div>
+      <div id=" footer-mobile" class="faq-container footer-mobile" onclick="onClickFooterItem(event)">
+          <div class="faq-question-container">
+              <h4 class="li-footer-header">INFORMATION</h4>
+              <i class="fas fa-angle-down "></i>
+          </div>
+          <div class="faq-answer-container">
+
+              <div class=" d-flex flex-column li-footer">
+
+                  <a class="mobile-footer-a">FAQ</a>
+                  <a class="mobile-footer-a">Shipping & Returns</a>
+                  <a class="mobile-footer-a">Cookies Policy</a>
+                  <a class="mobile-footer-a">Privacy Policy</a>
+              </div>
+
+
+          </div>
+      </div>
+      <div id=" footer-mobile" class="faq-container footer-mobile" onclick="onClickFooterItem(event)">
+          <div class="faq-question-container">
+              <h4 class="li-footer-header">LOYALTY</h4>
+              <i class="fas fa-angle-down "></i>
+          </div>
+          <div class="faq-answer-container">
+              <a class="faq-answer">
+                  <div class=" d-flex flex-column li-footer">
+                      <a class="mobile-footer-a">My Account </a>
+                  </div>
+
+              </a>
+          </div>
+      </div>
+      <div id="footer-mobile" class="faq-container footer-mobile" onclick="onClickFooterItem(event)">
+          <div class="faq-question-container">
+              <h4 class="li-footer-header">Subscribe</h4>
+              <i class="fas fa-angle-down "></i>
+          </div>
+          <div class="faq-answer-container">
+              <a class="faq-answer">
+                  <div class=" d-flex flex-column li-footer">
+                      <div id="mc_embed_signup">
+                          <form action="https://astalift.us20.list-manage.com/subscribe/post?u=09ab15b75b4fb84e2a18e4aa5&amp;id=0839564117" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                              target="_blank" novalidate>
+                              <div id="mc_embed_signup_scroll">
+                                  <div class="mc-field-group input-group mb-3">
+                                      <input type="email" placeholder="Your Email" value="" name="EMAIL" class="required email form-control bg-transparent  newsletter" id="mce-EMAIL"><input type="submit" value="Go" name="subscribe"
+                                          placeholder="Your Email" id="mc-embedded-subscribe" class="button subBtn btn btn-white bg-white border-0">
+                                  </div>
+                                  <div id="mce-responses" class="clear">
+                                      <div class="response" id="mce-error-response" style="display:none"></div>
+                                      <div class="response" id="mce-success-response" style="display:none"></div>
+                                  </div>
+                                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_09ab15b75b4fb84e2a18e4aa5_0839564117" tabindex="-1" value=""></div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+
+              </a>
+          </div>
+      </div>
+      <div class="faq-container footer-mobile" onclick="onClickFooterItem(event)">
+          <div class="faq-question-container ">
+              <h4 class="li-footer-header">Subscribe & Follow</h4>
+              <i class="fas fa-angle-down ml-auto"></i>
+          </div>
+
+      </div>
+      <div id="footer-social" class="d-flex d-inline justify-content-center">
+          <a style="background-color: #464646;" class="sbha-button banner-social-button" href="https://www.facebook.com/AstaliftSingapore" target="_blank">
+              <i style="color: #fff; font-size:40 ;" class="fab fa-facebook-f"></i></a>
+          <a style="background-color: #464646;" class="sbha-button banner-social-button" href="https://www.instagram.com/astaliftsg" target="_blank">
+              <i style="color: #fff; font-size:40 ;" class="fab fa-instagram"></i>
+              <a style="background-color: #464646;  ;" class="sbha-button banner-social-button" href="https://www.youtube.com/channel/UC6WwJOo0m530yFIK3Zevq0A" target="_blank">
+                  <i style="color: #fff; font-size:40 ;" class="fab fa-youtube"></i></a>
+      </div>
+  </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -845,6 +996,31 @@
           indicatorIcon.className += ' active';
         }
       }
+
+    }
+    function onClickFooterItem(e) {
+      const item = e.currentTarget;
+      const icons = item.querySelector('.fas');
+      if (icons.classList.contains('fa-angle-down')) {
+      
+        icons.classList.replace('fa-angle-down', 'fa-angle-up');
+       
+      } else {
+        icons.classList.replace('fa-angle-up', 'fa-angle-down');
+        
+       
+      }
+      const answerContainers = item.getElementsByClassName('faq-answer-container');
+      if (answerContainers.length > 0) {
+        const answerContainer = answerContainers[0];
+        if (answerContainer.style.maxHeight) {
+          answerContainer.style.maxHeight = null;
+        } else {
+          answerContainer.style.maxHeight = answerContainer.scrollHeight + "px";
+        }
+      }
+
+      
 
     }
   </script>

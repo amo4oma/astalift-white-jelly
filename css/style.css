@@ -727,6 +727,9 @@ z-index: -20;
   left: 33%;
   bottom: -20em;
 }
+.mobile-how-to-use-slider{
+  display: none;
+}
 #sec-3 {
   width: 100%;
   height: 100%;
@@ -1322,6 +1325,13 @@ footer {
  #mce-EMAIL{
      width:100px ;
  }
+
+ .mobile-tnc{
+   display: none;
+ }
+ .mobile-footer{
+   display: none;
+ }
 /* -------------- */
 @media screen and (max-width: 768px) {
   #sec-2 {
@@ -1338,6 +1348,7 @@ footer {
       display: none;
   }
 
+  #desktop-footer{display: none;}
   .slider {
     position: relative;
     margin-top: -70px;
@@ -1403,13 +1414,32 @@ footer {
   #sec-4 {
     display: none;
   }
+  #sec-5{
+    height: 75vh;
+  }
   .hearo-banner-mobile{
     width: 100%;
     height: 100vh;
       background-image: url(../images/mobile/01_HeroBanner.jpg);
       background-size: 100%;
       background-repeat: no-repeat;
+      background-color: #F3EEEA;
     
+  }
+  .faq-question-container{
+ 
+    width: 130%;
+    align-items: flex-start;
+  }
+  .faq-question{
+    font-size: 17px;
+    font-weight:500;
+  }
+  .fa-plus{
+    
+  }
+  .mobile-how-to-use-slider{
+    display: block;
   }
   .mobile-hearo-title{
       color: #ffffff;
@@ -1451,6 +1481,121 @@ footer {
     font-weight: 500;
     font-size: 15px;
   }
+  .gif-icon{
+    width: 250px !important;
+  }
+  .benifet-title{
+    font-size: 30px;
+    text-align: center !important;
+  }
+  .benifet-subtitle{
+    font-size: 15px;
+    text-align: center !important;
+  }
+  .flex-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  .pin-spacer{
+    display: none !important;
+  }
+
+  .mobile-how-to-use-slider .swiper-slide{
+    background-color: #d7063b;
+  }
+  .fa-arrow-right{
+    position: absolute;
+    left: 90%;
+    top: 39%;
+    color: #fff;
+    font-size: 15px;
+    z-index: 55555;
+    
+  }
+    .mobile-how-to-use-slider{
+    height: 100%;
+    padding-top:50px ;
+    padding-bottom: 50px;
+    background-color: #d7063b;
+    margin-top: 0;
+  }
+  .how-2-use-image{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 250px;
+    max-height: 250px;
+  }
+ 
+  .how-2-use-mobile-title{
+    color: #fff;
+    font-family: Bodoni;
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;
+  }
+  .step-text-1{
+    font-family: Mulish;
+    font-weight: bold;
+    font-size: 21.5px;
+    color: #fff;
+  }
+  .video-slide-mobile{
+    margin-top: 50px;
+    width: 70% !important;
+    transform: translate(-25%);
+
+  }
+  .they-using-it-title {
+ 
+    transform: translate(-38%, 220%);
+    width: 100%;
+  }
+  .how-2-use-mobile-d{
+    width: 80%;
+    font-size: 17px;
+    font-family: Mulish;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+  }
+  .jump-start{
+    color: #d7063b;
+    font-size: 32px;
+    top: 27%;
+    width: 100%;
+    left: 2%;
+    z-index: 4;
+    text-align: center;
+  }
+  .mobile-tnc{
+    display: block;
+    text-align: center;
+     margin-top: 20%;
+     transform: translate(10%);
+  }
+  .tnc{
+    width: 22em;
+    position: relative;
+ 
+  }
+  .by-clicking{
+    font-family: Mulish;
+    font-size: 15px;
+    color: #362f2d;
+  }
+  .tnc-title{
+    display: none;
+  }
+  .tnc-pp{
+    font-family: Mulish;
+    font-weight: bold;
+    font-size: 15px;
+    color: #362f2d;
+    text-decoration: underline;
+  }
   .arrow-next {
     width: 100px;
     position: absolute;
@@ -1487,17 +1632,32 @@ footer {
   }
   .form {
     width: 100%;
+    top: 50rem;
     padding-left: 5px;
     padding-right: 50px;
   }
+  .contact-icon{
+    width: 20px;
+  }
+  .form .form-control{
+    font-size: 20px;
+  }
+  .form-check-label{
+    font-size: 15px;
+    text-align: center;
+ 
+  }
+  #checkbox-1{display: none;}
   .check-container {
     position: unset;
     width: 66%;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   .form-btn {
-    position: unset;
-    width: 50%;
+    position: relative;
+    width: 100%;
+    left: 21px;
+    top: 20px;
   }
   .accordion-container {
     position: unset;
@@ -1505,6 +1665,50 @@ footer {
   .accordion-col {
     position: relative;
   }
+  .mobile-footer{
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+ 
+ 
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+  }
+  .footer-mobile.faq-container{
+    background-color: transparent;
+    padding: 0px 10px;
+  }
+  .mobile-footer-a {
+  
+      background-color: #c7103f;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 200;
+      font-family: Mulish;
+      padding: 18px;
+      border-bottom: #fff solid 1px;
+  }
+  .li-footer-header {
+    padding-top: 0px;
+    font-size: 20px !important;
+    float: right;
+    background-color:  #f5f5f5 !important;
+    color: #c7103f;
+    font-family: Bodoni;
+    font-weight: 600;
+
+    
+  }
+ .mobile-footer .faq-question-container {
+   width: 100%;
+   justify-content: space-between;
+ }
+ .fa-angle-down,
+ .fa-angle-up
+ {
+   color: #d7063b;
+   font-size: 15px;
+ }
 }
 
 @media screen and (max-height: 740px) {

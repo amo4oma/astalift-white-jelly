@@ -1,9 +1,10 @@
+gsap.config({nullTargetWarn: false});
 let tl = gsap.timeline({
     scrollTrigger :{
         trigger : "#sec-2",
         pin: true, 
         scrub: true,
-  
+        nullTargetWarn: false,
         start : "top top",
         end: "+=" + (window.innerHeight * 30),
         onLeave: () =>{
@@ -19,6 +20,7 @@ let tl = gsap.timeline({
         }
     }
 })
+
 tl.set( CSSRulePlugin.getRule("#sec-2::after"), {duration: 3, cssRule: {display: "block"}});
 tl.to('.title-1',5,{scale :'10', y:"-500%" , opacity:'0',display:"none"}, "first");
 tl.to('.subtitle',5,{scale :'10', y:"500%" , opacity:'0',display:"none"}, "first");
@@ -111,7 +113,7 @@ let tl2 = gsap.timeline({
       trigger : "#how-to-use-section",
       pin: true, 
       scrub: true,
- 
+      nullTargetWarn: false,
       start : "center center",
       end: "+=" + (window.innerHeight * 8),
     }
@@ -247,7 +249,22 @@ var newSwiper = new Swiper('.slider2', {
   prevButton: '.swiper-button-prev'
 });
 // second swiper ends
+// mobile-how-to-use-slider
 
+
+var mobileHowToUseSwiper = new Swiper(".mobile-how-to-use-slider", {
+  slidesPerView:1,
+  centeredSlides: true,
+  spaceBetween: 10,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+ 
+  nextButton: '.arrow-next',
+  prevButton: '.swiper-button-prev',
+});
 
 var cursor = $(".cursor"),
 		follower = $(".cursor-follower");
@@ -300,6 +317,9 @@ $(".link").on("mouseleave",function(){
 $('.tnc-click').click(function(){
   $('.tnc').fadeIn();
   console.log("clicked");
+})
+$('.tnc-pp').click(function (){
+  $('.tnc').fadeIn();
 })
 $('.tnc-close').click(function(){
   $('.tnc').fadeOut();
