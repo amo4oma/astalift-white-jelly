@@ -34,6 +34,35 @@
 </head>
 
 <body>
+  <section id="placeholder">
+    <div id="preloader">
+    <div class="container-fluid loader-page-container">
+        <div class="row placeholder-row d-flex justify-content-center align-items-center" >
+          <div class="col-1">
+            <img class="placeholder-flower-1" src="images/Flower 1.png" alt="">
+          </div>
+          <div class="col-8 mt-4 ">
+            <h3 class="placeholder-title-1 text-center">Astalift Presents</h3>
+            <h1 class="placeholder-title-2 text-center">White Jelly Aquarysta</h1>
+          </div>
+          <div class="col-1 mt-5">
+            <div class="placeholder-flower-2">
+            <img class="placeholder-flower-2-front" src="images/Flower 2_Front.png" alt="">
+            <img class="placeholder-flower-2-back" src="images/Flower 2_Back.png" alt="">
+          </div>
+          </div>
+        </div>
+        <div class="container"> 
+               <div class="loader row mt-4">
+                 <p class="placeholder-zero">0</p>
+        <div class="loader_bar col-5" id="loader_bar"><span class="loader_animate"></span></div>
+        <p class="loader_text col-2" id="loader_text"><span class="loader_text_unit" data-count="100">0</span><span></span></p>
+      </div></div>
+    
+    </div>
+  
+    </div>
+</section>
   <nav id="desktop-nav" class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="logo" src="./images/Astalift logo.png" alt=""></a>
@@ -527,42 +556,48 @@
 
   </div>
   <div id="video-popup-overlay"></div>
-  <section id="sec-5" >
+  <section id="sec-5"  >
     <div id="video-popup-container">
       <div id="video-popup-close" class="fade">&#10006;</div>
       <div id="video-popup-iframe-container">
           <iframe id="video-popup-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
       </div>
   </div>
+  <div class="container-fluid">
     <h1 class="text-start they-using-it-title">They’re Using It Too</h1>
+    <h1 class="text-center they-using-it-title-mobile">They’re Using It Too</h1>
     <!-- Swiper -->
-<div class="section d-flex flex-column align-items-center">
- <div class="swiper-container mySwiper  ">
- 
-      <div class="swiper-wrapper frist-swiper">
+    <div class="section d-flex flex-column align-items-center">
+      <div class="swiper-container mySwiper  ">
+      
+           <div class="swiper-wrapper frist-swiper">
+            
+             <div class="swiper-slide video-slide-mobile">
+               <div class="vpop" data-type="youtube" data-id=""
+                                                     data-autoplay='true'>
+               <a href="">
+                 <img class="image-of-vedio" src="./images/Video 1.jpg" alt="">
+               </a>
+             </div>
+         
        
-        <div class="swiper-slide video-slide-mobile">
-          <div class="vpop" data-type="youtube" data-id=""
-                                                data-autoplay='true'>
-          <a href="">
-            <img class="image-of-vedio" src="./images/Video 1.jpg" alt="">
-          </a>
+     
+           </div>
+     
+         </div>
+         <div class=" ">
+           <div class="col-6">
+             <img id="next" class="arrow-next  " src="./images/Arrow_Next.png" alt="">
+             <img id="prev" class="arrow-pre" src="./images/Arrow_Previous.png" alt="">
+           </div>
+         </div>
+     </div>
+     
         </div>
-    
-  
+        
+  </div>
+ 
 
-      </div>
-
-    </div>
-    <div class=" ">
-      <div class="col-6">
-        <img id="next" class="arrow-next  " src="./images/Arrow_Next.png" alt="">
-        <img id="prev" class="arrow-pre" src="./images/Arrow_Previous.png" alt="">
-      </div>
-    </div>
-</div>
-
-   
 
 
 
@@ -617,35 +652,7 @@
     </div>
   </section>
   </div>
-  <section id="placeholder">
-      <div id="preloader">
-      <div class="container-fluid loader-page-container">
-          <div class="row placeholder-row d-flex justify-content-center align-items-center" >
-            <div class="col-1">
-              <img class="placeholder-flower-1" src="images/Flower 1.png" alt="">
-            </div>
-            <div class="col-8 mt-4 ">
-              <h3 class="placeholder-title-1 text-center">Astalift Presents</h3>
-              <h1 class="placeholder-title-2 text-center">White Jelly Aquarysta</h1>
-            </div>
-            <div class="col-1 mt-5">
-              <div class="placeholder-flower-2">
-              <img class="placeholder-flower-2-front" src="images/Flower 2_Front.png" alt="">
-              <img class="placeholder-flower-2-back" src="images/Flower 2_Back.png" alt="">
-            </div>
-            </div>
-          </div>
-          <div class="container"> 
-                 <div class="loader row mt-4">
-                   <p class="placeholder-zero">0</p>
-          <div class="loader_bar col-5" id="loader_bar"><span class="loader_animate"></span></div>
-          <p class="loader_text col-2" id="loader_text"><span class="loader_text_unit" data-count="100">0</span><span></span></p>
-        </div></div>
-      
-      </div>
-    
-      </div>
-  </section>
+
   <section id="faq-section" class="container section-container page-section">
     <h2 class="section-faq-title">FAQs</h2>
     <div class="faq-container" onclick="onClickFAQItem(event)">

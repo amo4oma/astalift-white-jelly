@@ -192,7 +192,7 @@ $('#sec-2').mousemove(function(event){
 // flower Animation ends //
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView:2,
+  slidesPerView: screenWidth < 600 ? 1 : 2,
   centeredSlides: true,
   spaceBetween: 400,
   grabCursor: true,
