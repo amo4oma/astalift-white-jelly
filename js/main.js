@@ -243,7 +243,7 @@ var screenWidth = $( window ).width();
 var newSwiper = new Swiper('.slider2', {
   slidesPerView: screenWidth > 600 ? 4 : 1,
   paginationClickable: true,
-  spaceBetween: 2,
+  spaceBetween: screenWidth > 600 ? 2 : 1,
   lazyLoading: true,
   nextButton: '.swiper-button-next',
   prevButton: '.swiper-button-prev'
@@ -255,7 +255,7 @@ var newSwiper = new Swiper('.slider2', {
 var mobileHowToUseSwiper = new Swiper(".mobile-how-to-use-slider", {
   slidesPerView:1,
   centeredSlides: true,
-  spaceBetween: 10,
+  spaceBetween: screenWidth> 600 ? 10 : 1,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
