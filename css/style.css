@@ -1709,6 +1709,9 @@ footer {
    color: #d7063b;
    font-size: 15px;
  }
+.swiper-slide{
+  margin-right: 0px;
+}
 }
 
 @media screen and (max-height: 740px) {
