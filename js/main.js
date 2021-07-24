@@ -194,7 +194,7 @@ $('#sec-2').mousemove(function(event){
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: screenWidth < 600 ? 1 : 2,
   centeredSlides: true,
-  spaceBetween: 400,
+  spaceBetween: $( window ).width() < 600 ? 0 : 400,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -316,13 +316,17 @@ $(".link").on("mouseleave",function(){
 
 $('.tnc-click').click(function(){
   $('.tnc').fadeIn();
+
   console.log("clicked");
 })
 $('.tnc-pp').click(function (){
+  $( window ).width() > 400? $('.contact-container').css('height', '215vh') : $('.contact-container').css('height', '200vh');
   $('.tnc').fadeIn();
 })
 $('.tnc-close').click(function(){
-  $('.tnc').fadeOut();
+  $('.tnc').hide("fast");
+ 
+ $('.contact-container').css('height', '200vh');
   console.log("out");
 })
 
@@ -333,7 +337,8 @@ $(document).ready(function(){
     $('.slider').toggle();
   })
   $('#slider-open').click(function(){
-    $('.slider').toggle();
+    $('.slider').toggle( );
+ 
   })
 })
 

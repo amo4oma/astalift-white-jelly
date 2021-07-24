@@ -1413,14 +1413,20 @@ footer {
   .slider {
     position: relative;
     margin-top: -70px;
-    height: 100vh;
-    width: 78%;
+    height: 120vh;
+    width: 60%;
     background-color: #f3eeea;
     color: #c7103f;
     margin-left: -8px;
-    display: none;
-    transition: 1s;
+ 
+    right: 0px;
     left: 0;
+    display: none;
+ 
+  }
+
+  .navbar {
+    height: 50px;
   }
   .slider::before{
       content: "";
@@ -1430,16 +1436,23 @@ footer {
       opacity: 50%;
       position: absolute;
       z-index: -1;
+
   }
+ 
   #slider-open {
     position: absolute;
     top: 20px;
     margin-left: 13px;
-    font-size: 41px;
+    font-size: 21px;
     color: #f3eeea;
   }
   .logo {
-    width: 200px;
+    width: 120px;
+    transform: translate(45%);
+  }
+  .slider-logo{
+    width: 100px;
+    transform: translate(50%);
   }
   .slider-ul {
     line-height: 2.5;
@@ -1453,19 +1466,26 @@ footer {
     text-decoration: none;
     font-size: 24px;
     font-family: Mulish;
- 
+  }
+  .slider-link::after{
+    content:'';
+    display:block;
+    margin-top:5px;
+    margin-left:15px;
+    width:200px;  
+    border-bottom: 4px solid #f3f3f3
   }
   .slider-link .nav-item{
     border-bottom:1px #000 solid ;
   }
   .slider-header {
     background-color: #d7063b;
-    height: 84px;
-    padding-top: 20px;
+    height: 76px;
+    padding-top: 30px;
   }
   #slider-close {
     margin-left: 13px;
-    font-size: 41px;
+    font-size: 21px;
     color: #f3eeea;
   }
   .mobile-container{
@@ -1648,7 +1668,7 @@ footer {
      transform: translate(10%);
   }
   .tnc{
-    width: 22em;
+    width: 29em;
     position: relative;
  
   }
@@ -1745,6 +1765,16 @@ footer {
  
     padding-bottom: 20px;
     background-color: #f5f5f5;
+  }
+  .mySwiper{
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150%;
+  }
+  .frist-swiper{
+ 
+    width: 50%;
   }
   .footer-mobile.faq-container{
     background-color: transparent;
