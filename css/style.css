@@ -937,7 +937,11 @@ z-index: -20;
 }
 .image-of-vedio {
   display: block;
-  width: 130%;
+  position: relative;
+  left: 50%;
+  margin-top: 200px;
+  transform: translate(-50%);
+  width: 50%;
   height: 100%;
   object-fit: cover;
 }
@@ -1343,6 +1347,7 @@ footer {
  .mySwiper{
   left: -86px;
 }
+ 
 /* -------------- */
 @media screen and (max-width: 768px) {
   #sec-2 {
@@ -1350,6 +1355,8 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
+  
+ 
   #mobile-nav {
     display: block;
     position: fixed;
@@ -1644,6 +1651,12 @@ footer {
     transform: translate(-38%, 220%);
     width: 100%;
   }
+  .image-of-vedio{
+    left: 50%;
+    margin-top: 110px;
+    transform: translate(-26%);
+    width: 100%;
+  }
   .how-2-use-mobile-d{
     width: 80%;
     font-size: 17px;
@@ -1770,7 +1783,8 @@ footer {
     margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    width: 150%;
+    width: 100%;
+    left: 0;
   }
   .frist-swiper{
  

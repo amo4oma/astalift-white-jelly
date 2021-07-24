@@ -320,13 +320,12 @@ $('.tnc-click').click(function(){
   console.log("clicked");
 })
 $('.tnc-pp').click(function (){
-  $( window ).width() > 400? $('.contact-container').css('height', '215vh') : $('.contact-container').css('height', '200vh');
+ 
   $('.tnc').fadeIn();
 })
 $('.tnc-close').click(function(){
   $('.tnc').hide("fast");
  
- $('.contact-container').css('height', '200vh');
   console.log("out");
 })
 
