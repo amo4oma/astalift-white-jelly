@@ -1487,14 +1487,20 @@ footer {
     color: #d7063b;
     font-family: Mulish;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
   }
   .sec-2-mobile h3{
     text-align: center;
     color: #d7063b;
     font-family: Mulish;
-    font-size: 20px;
+    font-size: 15px;
   }
+.sec-2-mobile-title{
+  font-size: 17px !important;
+}
+.sec-moile-second-title{
+  font-size: 18px !important;
+}
   .sec-2-mobile p{
     text-align: center;
     color: #d7063b;
@@ -1506,11 +1512,14 @@ footer {
     width: 250px !important;
   }
   .benifet-title{
+    width: 75%;
+    margin-top: 50px;
     font-size: 30px;
     text-align: center !important;
   }
   .benifet-subtitle{
     font-size: 15px;
+    margin-bottom: 50px;
     text-align: center !important;
   }
   .flex-mobile{
@@ -1586,7 +1595,7 @@ footer {
   .jump-start{
     color: #d7063b;
     font-size: 32px;
-    top: 27%;
+    top: 37%;
     width: 100%;
     left: 2%;
     z-index: 4;
@@ -1648,13 +1657,14 @@ footer {
   .contact-container {
     position: relative;
     width: 100%;
+    height: 203vh;
     background-image: url(../images/mobile/20_FAQs.jpg);
     background-size: contain;
     background-repeat: no-repeat;
   }
   .form {
     width: 100%;
-    top: 50rem;
+    top: 65rem;
     padding-left: 5px;
     padding-right: 50px;
   }
