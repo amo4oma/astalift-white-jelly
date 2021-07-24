@@ -60,8 +60,12 @@ h1 {
 .mobile-container{
     display: none;
 }
+
 .placeholder-row {
   margin-top: 200px;
+}
+#loader-container{
+  position: relative;
 }
 .placeholder-title-1 {
   position: relative;
@@ -121,7 +125,7 @@ h1 {
   width: 100%;
   height: 100vh;
   background: #f3eeea;
-  z-index: 12;
+  z-index: 6666;
   transition: all 0.4s ease;
 }
 .loader-page-container {
@@ -1354,7 +1358,43 @@ footer {
   #desktop-nav{
       display: none;
   }
-  
+
+  .loader_bar{
+    left: 0;
+  }
+  .placeholder-title-1{
+    font-size: 10px;
+    top: -20px;
+  }
+  .placeholder-title-2{
+
+    font-size: 28px;
+  }
+  .loader-page-container{
+    padding-top: 150px;
+  }
+  .loader .loader_bar {
+    width: 250px;
+  }
+  .placeholder-flower-1{
+    width: 150px;
+    left: -1rem;
+    top: -80px;
+  }
+  .placeholder-flower-2-front {
+    width: 150px;
+    right: 2rem;
+    top: 18px;
+  }
+
+#loader-container {
+
+    top: 61px;
+}
+  .placeholder-flower-2-back{
+    width: 100px;
+    right: 0rem;
+  }
   .they-using-it-title{
     display: none;
  
