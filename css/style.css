@@ -1421,7 +1421,7 @@ footer {
     position: relative;
     margin-top: -70px;
     height: 120vh;
-    width: 60%;
+    width: 78%;
     background-color: #f3eeea;
     color: #c7103f;
     margin-left: -8px;
@@ -1681,9 +1681,25 @@ footer {
      transform: translate(10%);
   }
   .tnc{
-    width: 29em;
+    width: 95%;
     position: relative;
  
+  }
+  .swiper-button-next{
+    opacity: 0;
+  }
+  .mobile-arrows-right .fa-arrow-right{
+    color: #d7063b;
+    opacity: 1;
+  }
+  .mobile-arrows-left{
+    position: absolute;
+    top: 38.5%;
+    z-index: 2;
+    left: 1%;
+    color: #d7063b;
+    opacity: 1;
+    font-size: 15px;
   }
   .by-clicking{
     font-family: Mulish;

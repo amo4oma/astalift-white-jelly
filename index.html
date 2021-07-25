@@ -107,16 +107,16 @@
         </div>
         <ul class="slider-ul">
           <li class="nav-item">
-            <a class="slider-link " aria-current="page" onclick="topFunction()"  >White Jelly Aquarysta</a>
+            <a class="slider-link " onclick="closeSlider()" aria-current="page" href="#hearo"  >White Jelly Aquarysta</a>
           </li>
           <li class="nav-item">
-            <a class="slider-link" href="#sec-3">Benefits </a>
+            <a class="slider-link" onclick="closeSlider()" href="#sec-3">Benefits </a>
           </li>
           <li class="nav-item">
-            <a class="slider-link" href="#sec-4">Application</a>
+            <a class="slider-link" onclick="closeSlider()" href="#how-2-use-mobile">Application</a>
           </li>
           <li class="nav-item">
-            <a class="slider-link " href="https://astalift.com.sg/product/white-jelly-aquarysta-40g-60g-refill/"
+            <a class="slider-link " onclick="closeSlider()" href="https://astalift.com.sg/product/white-jelly-aquarysta-40g-60g-refill/"
               tabindex="-1" target="_blank">SHOP NOW </a>
           </li>
         </ul>
@@ -124,7 +124,7 @@
     </div>
   </nav>
   <div  class="mobile-container container-fluid p-0">
-    <div class="hearo-banner-mobile d-flex flex-column justify-content-center align-items-center">
+    <div id="hearo" class="hearo-banner-mobile d-flex flex-column justify-content-center align-items-center">
         <h1 class="mobile-hearo-title">Unveil Your Skin&#8217;s Radiance</h1>
         <p class="mobile-hearo-subtitel">THE ULTIMATE SKIN BRIGHTENING BOOSTER</p>
     </div>
@@ -421,7 +421,8 @@
 
       </div>
     </section>
-    <div class="swiper-container mobile-how-to-use-slider row">
+    <section id="how-2-use-mobile">
+        <div  class="swiper-container mobile-how-to-use-slider row">
       <h1 class="how-2-use-mobile-title">How To Use</h1>
       <i class="fas fa-arrow-right"></i>
       <div class="swiper-wrapper">
@@ -456,6 +457,8 @@
         </div>
         </div>
     </div>
+    </section>
+  
     <section id="contact">
       <div class="container-fluid contact-container ">
         <div class="container">
@@ -657,9 +660,9 @@
           </div>
         </div>
       </div>
-      <!-- Add Arrows -->
-      <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
+          <!-- Add Arrows -->
+          <div class="mobile-arrows-right "><i class="fas fa-arrow-right"></i></div>
+            <div class="mobile-arrows-left "><i class="fas fa-arrow-left"></i></div>
     </div>
   </section>
   </div>
@@ -1041,6 +1044,9 @@
 
       
 
+    }
+    function closeSlider(){
+      $('.slider').hide();
     }
   </script>
 </body>

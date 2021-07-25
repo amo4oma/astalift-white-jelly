@@ -245,8 +245,18 @@ var newSwiper = new Swiper('.slider2', {
   paginationClickable: true,
   spaceBetween: screenWidth > 600 ? 2 : 1,
   lazyLoading: true,
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev'
+  nextButton: '.mobile-arrows-right ',
+  prevButton: '.mobile-arrows-left '
+});
+$('.mobile-arrows-right').click(function(e){
+
+  newSwiper.slideNext();
+
+});
+$('.mobile-arrows-left ').click(function(e){
+
+  newSwiper.slidePrev();
+
 });
 // second swiper ends
 // mobile-how-to-use-slider
