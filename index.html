@@ -100,7 +100,7 @@
    
       </div>
     
-      <div class="slider">
+      <div class="slider ">
         <div class="slider-header  d-flex align-items-center">
           <i id="slider-close" class="fas fa-times"></i>
           <a class="navbar-brand" href="#"><img class="slider-logo" src="./images/Astalift logo.png" alt=""></a>
@@ -476,7 +476,7 @@
 
                 <div class="form-group">
                   <label class="form-label" id="nameLabel" for="name"></label>
-                  <input type="name" class="form-control" id="name" name="name" placeholder="Last Name" required tabindex="2">
+                  <input type="name" class="form-control" id="last-name" name="name" placeholder="Last Name" required tabindex="2">
                 </div>
 
                 <div class="form-group">
@@ -505,7 +505,7 @@
                   </div>
                   <br>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                     <label class="form-check-label" for="defaultCheck1">
                       
                       I consent to join Astalift mailing list and receive marketing & promotional news from Astalift.
@@ -515,7 +515,7 @@
                 </div>
 
                 <div class="text-center">
-                  <button type="submit" class="form-btn btn">Get Your Free Sample</button>
+                  <button type="submit" class="form-btn btn" onclick="handelEmail()">Get Your Free Sample</button>
 
                 </div>
                 <div class="mobile-tnc">
@@ -1046,7 +1046,7 @@
 
     }
     function closeSlider(){
-      $('.slider').hide();
+      $('.slider').toggleClass('open');
     }
   </script>
 </body>

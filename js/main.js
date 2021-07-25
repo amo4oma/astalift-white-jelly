@@ -343,10 +343,10 @@ $('.tnc-close').click(function(){
 // mobile navigator
 $(document).ready(function(){
   $('#slider-close').click(function(){
-    $('.slider').toggle();
+    $('.slider').removeClass('open')
   })
   $('#slider-open').click(function(){
-    $('.slider').toggle( );
+    $('.slider').addClass('open')
  
   })
 })
@@ -360,3 +360,35 @@ $('.fas').click(function(){
   }
   
 })
+
+
+// contact Form 
+
+function handelEmail() {
+  fetch("https://formsubmit.co/ajax/ahmd4obad@gmail.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+ 
+      Name: $("#name").val(),
+      Last_Name :$('#last-name').val(),
+      Telephone: $("#conatct").val(),
+      Email: $("#email").val(),
+ 
+      _subject: "New Contact from White Jelly Landing Page",
+      _cc: "ahmd4obad@gmail.com",
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      if (data.success === "true") {
+        alert("thank you For your Subsucribtion")
+      }
+    })
+
+    .catch((error) => alert("Something Wrong Happined Please try Again"));
+}

@@ -1365,9 +1365,7 @@ footer {
     position: fixed;
     top: 0;
   }
-  #desktop-nav{
-      display: none;
-  }
+ 
 
   .loader_bar{
     left: 0;
@@ -1423,21 +1421,33 @@ footer {
   }
  
   #desktop-footer{display: none;}
+  .wrapper{
+    width:auto;
+  }
   .slider {
     position: relative;
     margin-top: -70px;
     height: 120vh;
-    width: 78%;
+    width: 0px;
     background-color: #f3eeea;
     color: #c7103f;
     margin-left: -8px;
- 
     right: 0px;
     left: 0;
     display: none;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+ 
  
   }
+  .open{
+    width: 78% !important;
 
+    display: block;
+  }
+ 
   .navbar {
     height: 50px;
   }
@@ -1795,7 +1805,7 @@ footer {
   .mobile-footer{
     display: block;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 5px;
  
  
     padding-bottom: 20px;
