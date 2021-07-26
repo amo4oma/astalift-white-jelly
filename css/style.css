@@ -109,7 +109,7 @@ h1 {
     left: -37px;
     top: -15px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: Mulish;
     color: #d7063b;
     
@@ -149,7 +149,7 @@ h1 {
   top: -35px;
   left: 101%;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: Mulish;
   color: #d7063b;
   margin: 20px auto;
@@ -1012,7 +1012,7 @@ z-index: -20;
   border-color: #d7063b;
 }
 #name:valid,
-#last-name,
+#last-name:valid,
 #conatct:valid,
 #email:valid{
     box-shadow: none;
