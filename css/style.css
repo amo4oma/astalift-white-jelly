@@ -44,7 +44,9 @@ h1 {
   margin-right: 60px;
   cursor: pointer;
 }
-
+#mobile-contact{
+  display: none;
+}
 .nav-link:hover {
   color: #f3eeea !important;
   border-bottom: #fff 1px solid;
@@ -240,6 +242,7 @@ z-index: -20;
     font-family: Mulish;
     font-weight: bold;
     color: #ffff;
+    -webkit-appearance: none;
   
 }
 .scrolling-dot {
@@ -536,6 +539,8 @@ z-index: -20;
   z-index: 4;
   width: 90px;
   border-radius: 50px;
+  -webkit-appearance:none;
+  opacity: 1
 }
 .jelly-drops-container {
   position: relative;
@@ -854,7 +859,7 @@ z-index: -20;
 .contact-icon {
   position: absolute;
   width: 30px;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .name-icon {
   width: 25px;
@@ -1356,17 +1361,25 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
+  #mobile-contact{
+    display: block;
   
+  }
+ 
   .placeholder-row{
     margin-top: 130px;
+ 
   }
+ 
   #mobile-nav {
     display: block;
     position: fixed;
     top: 0;
   }
  
-
+  #contact-desktop{
+    display: none;
+  }
   .loader_bar{
     left: 0;
   }
@@ -1429,7 +1442,7 @@ footer {
     margin-top: -70px;
     height: 120vh;
     width: 0px;
-    background-color: #f3eeea;
+    background-color: #ffff;
     color: #c7103f;
     margin-left: -8px;
     right: 0px;
@@ -1471,7 +1484,7 @@ footer {
   }
   .logo {
     width: 120px;
-    transform: translate(45%);
+    transform: translate(20%);
   }
   .slider-logo{
     width: 100px;
@@ -1495,8 +1508,17 @@ footer {
     display:block;
     margin-top:5px;
     margin-left:15px;
-    width:200px;  
-    border-bottom: 4px solid #f3f3f3
+    width:250px;  
+    border-bottom: 2px solid #f3f3f3
+  }
+  .bodoni{
+    font-family: Bodoni !important;
+  }
+  .mulish{
+    font-family: Mulish !important;
+  }
+  .bold{
+    font-weight: bold;
   }
   .slider-link .nav-item{
     border-bottom:1px #000 solid ;
@@ -1539,9 +1561,7 @@ footer {
     font-size: 17px;
     font-weight:500;
   }
-  .fa-plus{
-    
-  }
+ 
   .mobile-how-to-use-slider{
     display: block;
   }
@@ -1583,6 +1603,7 @@ footer {
 }
 .sec-moile-second-title{
   font-size: 18px !important;
+  font-weight: bold;
 }
   .sec-2-mobile p{
     text-align: center;
@@ -1619,14 +1640,26 @@ footer {
   .mobile-how-to-use-slider .swiper-slide{
     background-color: #d7063b;
   }
-  .fa-arrow-right{
+  .arrow-right{
     position: absolute;
     left: 90%;
-    top: 39%;
+    top: 50%;
     color: #fff;
     font-size: 15px;
     z-index: 55555;
     
+  }
+  .arrow-left{
+    position: absolute;
+ 
+    top: 50%;
+    color: #fff;
+    font-size: 15px;
+    z-index: 55555;
+    
+  }
+  .arrow-img{
+    width: 30px;
   }
     .mobile-how-to-use-slider{
     height: 100%;
@@ -1651,7 +1684,7 @@ footer {
   }
   .step-text-1{
     font-family: Mulish;
-    font-weight: bold;
+    font-weight: 900 !important;
     font-size: 21.5px;
     color: #fff;
   }
@@ -1710,9 +1743,20 @@ footer {
   }
   .mobile-arrows-left{
     position: absolute;
+    width: 40px;
     top: 38.5%;
     z-index: 2;
     left: 1%;
+    color: #d7063b;
+    opacity: 1;
+    font-size: 15px;
+  }
+  .mobile-arrows-right{
+    position: absolute;
+    width: 40px;
+    top: 38.5%;
+    z-index: 2;
+    right: 1%;
     color: #d7063b;
     opacity: 1;
     font-size: 15px;
@@ -1742,6 +1786,9 @@ footer {
   .title-1 {
     font-size: 3rem;
   }
+  .email-icon{
+    margin-top: 30px;
+  }
   .subtitle {
     font-size: 1rem;
     letter-spacing: 50pt;
@@ -1759,30 +1806,56 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .contact-container {
+  #mobile-contact{
     position: relative;
     width: 100%;
-    height: 203vh;
+    height: 100%;
     background-image: url(../images/mobile/20_FAQs.jpg);
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .form {
+  .jump-start-mobile{
+    font-family: Bodoni;
+    font-size: 30px;
+    color: #d7063b;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .m-contact-container {
+    padding-top: 45rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  .form-mobile{
     width: 100%;
-    top: 65rem;
+ 
     padding-left: 5px;
     padding-right: 50px;
   }
   .contact-icon{
     width: 20px;
   }
-  .form .form-control{
+  .form-mobile .form-control{
     font-size: 20px;
   }
   .form-check-label{
     font-size: 15px;
     text-align: center;
  
+  }
+  .tnc-mobile{
+    background-color:  #f3f3f3;
+    margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 500;
+  }
+  .tnc-mobile h5{
+    font-size: 13px;
+    font-weight: 600;
   }
   #checkbox-1{display: none;}
   .check-container {
@@ -1861,7 +1934,16 @@ footer {
   margin-right: 0px;
 }
 }
-
+@media screen and (max-width:350px) {
+  .u-may-also-title{
+    top: 28px;
+  }
+  .loader-page-container {
+    padding-top: 97px;}
+  .placeholder-zero{left: -12px;}
+  
+}
+ 
 @media screen and (max-height: 740px) {
   .contact-container{
     height: 200vh;

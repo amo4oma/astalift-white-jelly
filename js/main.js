@@ -218,7 +218,7 @@ $('#prev').click(function(e){
 // PLACEHOLDER PAGE STARTS 
 
 
-$(window).on('load', function (){
+$(window).on('click', function (){
   
   var count = 0;
   var counting = setInterval(function(){
@@ -339,6 +339,14 @@ $('.tnc-close').click(function(){
   console.log("out");
 })
 
+$('.tnc-mobile').hide();
+$('.tnc-pp').click(function(){
+  $('.tnc-mobile').show("slow");
+})
+$('#tnc-mobile-close').click(function(){
+  $('.tnc-mobile').hide();
+})
+
 
 // mobile navigator
 $(document).ready(function(){
@@ -392,3 +400,12 @@ function handelEmail() {
 
     .catch((error) => alert("Something Wrong Happined Please try Again"));
 }
+
+
+
+$(window).resize(function(){
+if ($( window ).height() <= 598){
+  $('.contact-container').css('height','230vh');
+  $('.image-of-vedio').css('width','34%')
+}
+})
