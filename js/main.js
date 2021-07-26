@@ -108,6 +108,7 @@ tl.to('.delivering-result-container',5,{y:'-320%', opacity:0, display:'none'},'l
  
 
     //  HOW TO USE ANIMATION STARTS 
+    
 let tl2 = gsap.timeline({
   scrollTrigger :{
       trigger : "#how-to-use-section",
@@ -125,11 +126,21 @@ let tl2 = gsap.timeline({
       tl2.from('.step-2', 1, {y: 100, opacity:0 }, 'frist')
       tl2.to('.step-2', 1, {opacity:0 })
       tl2.to('.flwres-frame', 0.5 , {x: -500}, 'second')
-      tl2.to('.girl-frame', 1 , {x: -970}, 'second')
+      if($(window).width() <= 1440){
+        tl2.to('.girl-frame', 1 , {x : -880}, 'second')
+      }else{
+        tl2.to('.girl-frame', 1 , {x : -970}, 'second')
+      }
+     
       tl2.from('.step-3', 1, {y: 100, opacity:0 }, 'second')
       tl2.to('.step-3', 1, {opacity:0 })
       tl2.to('.flwres-frame', 0.5 , {x: -800}, '3rd')
-      tl2.to('.girl-frame', 1 , {x: -1450}, '3rd')
+      if($(window).width() <= 1440){
+        tl2.to('.girl-frame', 1 , {x : -1350}, '3rd')
+      }else{
+        tl2.to('.girl-frame', 1 , {x : -1450}, '3rd')
+      }
+   
       tl2.from('.step-4', 2, {y: 100, opacity:0 }, '3rd')
  
 

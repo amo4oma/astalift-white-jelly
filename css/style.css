@@ -1951,6 +1951,12 @@ footer {
     height: 200vh;
   }
 }
+ 
+@media screen and (max-height: 1400px) {
+  .girl-frame{
+    left: 19em ;
+  }
+}
 #video-popup-container {
   display: none;
   position: fixed;
