@@ -127,10 +127,11 @@ let tl2 = gsap.timeline({
       tl2.to('.step-2', 1, {opacity:0 })
       tl2.to('.flwres-frame', 0.5 , {x: -500}, 'second')
       if($(window).width() <= 1440 || $(window).width() <= 1024){
-        tl2.to('.girl-frame', 1 , {x : -900}, 'second')
+        tl2.to('.girl-frame', 1 , {x : -890}, 'second')
       }else{
         tl2.to('.girl-frame', 1 , {x : -930}, 'second')
       }
+    
      
       tl2.from('.step-3', 1, {y: 100, opacity:0 }, 'second')
       tl2.to('.step-3', 1, {opacity:0 })
