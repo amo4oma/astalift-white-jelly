@@ -1012,6 +1012,7 @@ z-index: -20;
   border-color: #d7063b;
 }
 #name:valid,
+#last-name,
 #conatct:valid,
 #email:valid{
     box-shadow: none;

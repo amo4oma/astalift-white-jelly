@@ -248,6 +248,24 @@ var newSwiper = new Swiper('.slider2', {
   nextButton: '.mobile-arrows-right ',
   prevButton: '.mobile-arrows-left '
 });
+
+$('.mobile-arrows-left').hide();
+newSwiper.on('transitionEnd', function() {
+  console.log('*** mySwiper.realIndex', newSwiper.realIndex);
+  if(newSwiper.realIndex === 0){
+    $('.mobile-arrows-left').hide();
+
+  }else{
+    $('.mobile-arrows-left').show();
+  }
+  if(newSwiper.realIndex === 3){
+    $('.mobile-arrows-right').hide();
+
+  }else{
+    $('.mobile-arrows-right').show();
+  }
+});
+ 
 $('.mobile-arrows-right').click(function(e){
 
   newSwiper.slideNext();
@@ -274,8 +292,22 @@ var mobileHowToUseSwiper = new Swiper(".mobile-how-to-use-slider", {
  
   nextButton: '.arrow-next',
   prevButton: '.swiper-button-prev',
+  
 });
-
+$('.arrow-left').hide();
+mobileHowToUseSwiper.on('transitionEnd', function() {
+  console.log('*** mySwiper.realIndex', mobileHowToUseSwiper.realIndex);
+  if (mobileHowToUseSwiper.realIndex === 0){
+    $('.arrow-left').hide();
+  } else{
+    $('.arrow-left').show();
+  }
+  if (mobileHowToUseSwiper.realIndex === 3){
+    $('.arrow-right').hide();
+  } else{
+    $('.arrow-right').show();
+  }
+});
 var cursor = $(".cursor"),
 		follower = $(".cursor-follower");
 
