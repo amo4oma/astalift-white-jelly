@@ -6,7 +6,7 @@ let tl = gsap.timeline({
         scrub: true,
         nullTargetWarn: false,
         start : "top top",
-        end: "+=" + (window.innerHeight * 30),
+        end: "+=" + (window.innerHeight * 20),
         onLeave: () =>{
  
           $('#sec-2').css("overflow","hidden");
@@ -87,8 +87,9 @@ tl.to('.flwr-7' , 5, {y : '-150%'},'up-2')
 tl.to('.flwr-8' , 5, {y : '-180%'},'up-2')
 
 tl.to('.jellysAndMessages-container, .flwr-9,.flwr-6,.flwr-5,.leaf-2, .wj-top',4, {y:"-200%", opacity:0} , 'up')
+tl.fromTo('.delivering-result-container', 7, {y: '50em', opacity:0},{y:'-20%',opacity:1}, 'up')
 tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 3.png"}})
-tl.to('.delivering-result-container', 4, {opacity:1})
+
 
 tl.to('.wj-bottom' , 5, {y : '-210%', opacity:0},'next-page')
 tl.to('.flwr-7' , 5, {y : '-250%', opacity:0},'next-page')
@@ -138,7 +139,9 @@ let tl2 = gsap.timeline({
       tl2.to('.flwres-frame', 0.5 , {x: -860}, '3rd')
       if($(window).width() <= 1440 || $(window).width() <= 1024){
         tl2.to('.girl-frame', 1 , {x : -1390}, '3rd')
-      }else{
+      }else if ($(window).width() <= 1250){
+
+      }else {
         tl2.to('.girl-frame', 1 , {x : -1420}, '3rd')
       }
    

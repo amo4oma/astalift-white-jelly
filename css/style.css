@@ -36,6 +36,9 @@ h1 {
 
   z-index: 999;
 }
+.htu-link:hover{
+  color: #000;
+}
 .nav-link {
   font-size: 20px;
   color: #fff !important;
@@ -130,6 +133,7 @@ h1 {
   background: #f3eeea;
   z-index: 6666;
   transition: all 0.4s ease;
+  z-index: 999999;
 }
 .loader-page-container {
   position: relative;
@@ -249,13 +253,12 @@ z-index: -20;
   width: 100%;
   height: 90px;
   position: relative;
-  left: 50%;
-  top: 19em;
+ top: 5em;
   z-index: 555;
 }
 .scroll-icon-text{
- position: absolute;
- left: -7%;
+ 
+ 
  font-size: 20px;
  color: #ffffff;
  font-family: Mulish ;
@@ -834,6 +837,13 @@ z-index: -20;
 }
 .htu-link {
   color: #fff;
+}
+.mobile-htu-link{
+  color: #ffff !important;
+
+}
+.mobile-htu-link:hover{
+  color: #000;
 }
 .contact-container {
   position: relative;
@@ -1956,6 +1966,21 @@ footer {
   .girl-frame{
     left: 19em ;
   }
+}
+@media screen and (max-width: 1260px) {
+  .title-1{
+    font-size: 8rem;
+  }
+  .wj-bottom,.wj-top {
+    width: 20em;
+  }
+  .u-may-also-title{
+    top: 27px;
+  }
+  .girl-frame {
+    left: 16em;
+    width: 130%;
+}
 }
 #video-popup-container {
   display: none;
