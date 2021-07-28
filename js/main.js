@@ -5,7 +5,7 @@ let tl = gsap.timeline({
         trigger : "#sec-2",
         pin: true, 
         scrub: 0.2,
-        markers: true,
+         
  
  
         start : "bottom bottom",
@@ -117,7 +117,7 @@ let tl2 = gsap.timeline({
   scrollTrigger :{
       trigger : "#how-to-use-section",
       pin: true, 
-      markers: true,
+   
       scrub: true,
       nullTargetWarn: false,
       start : "center center",
