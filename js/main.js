@@ -1,19 +1,21 @@
 gsap.config({nullTargetWarn: false});
+
 let tl = gsap.timeline({
     scrollTrigger :{
         trigger : "#sec-2",
         pin: true, 
-        scrub: true,
-        nullTargetWarn: false,
-        start : "top top",
+        scrub: 0.2,
+        markers: true,
+ 
+ 
+        start : "bottom bottom",
         end: "+=" + (window.innerHeight * 20),
         onLeave: () =>{
- 
+          
           $('#sec-2').css("overflow","hidden");
           $('#desktop-nav').fadeIn();
-          $('html, body').animate({
-            scrollTop: $("#sec-3").offset().top
-          });
+       
+     
         },
         onEnterBack: () =>{
           $('#desktop-nav').fadeOut();
@@ -80,21 +82,22 @@ tl.to('.left-description-messages-3, .right-description-message-3 ' , 10 , {y: '
 
 tl.to('.wj-bottom' , 5, {y : '-55%'},'up')
 tl.to('.flwr-7' , 5, {y : '-75%'},'up')
-tl.to('.flwr-8' , 5, {y : '-90%'},'up')
+tl.to('.flwr-8' , 5, {y : '-70%'},'up')
+tl.fromTo('.delivering-result-container', 5, {y : '300%', opacity:0},{y:"-10%",opacity :1},'up')
 tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 2.png"}}, )
 tl.to('.wj-bottom' , 5, {y : '-110%'},'up-2')
 tl.to('.flwr-7' , 5, {y : '-150%'},'up-2')
 tl.to('.flwr-8' , 5, {y : '-180%'},'up-2')
 
 tl.to('.jellysAndMessages-container, .flwr-9,.flwr-6,.flwr-5,.leaf-2, .wj-top',4, {y:"-200%", opacity:0} , 'up')
-tl.fromTo('.delivering-result-container', 7, {y: '50em', opacity:0},{y:'-20%',opacity:1}, 'up')
-tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 3.png"}})
 
+tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 3.png"}})
+tl.to('.delivering-result-container', 5,{y:"-50%",opacity :1},'reanimate')
 
 tl.to('.wj-bottom' , 5, {y : '-210%', opacity:0},'next-page')
 tl.to('.flwr-7' , 5, {y : '-250%', opacity:0},'next-page')
 tl.to('.flwr-8' , 5, {y : '-280%', opacity:0},'next-page')
-tl.to('.delivering-result-container', 5, {y : '-230%', opacity:1},'next-page')
+tl.to('.delivering-result-container', 5,{y:"-230%",opacity :1},'next-page')
 tl.to('.skin-cells-container',5,{y:-100, opacity:1})
  
 
@@ -103,8 +106,8 @@ tl.from('.first-message',5,{ y:75 ,opacity:0},"cells-to-skin-1")
 tl.to('.first-message',5,{ opacity:0})
 tl.to('.cell-1, .cell-2', 5, {y:150},"cells-to-skin-2")
 tl.from('.second-message',5,{y:50, opacity:0},"cells-to-skin-2")
-tl.to('.skin-cells-container',5,{y:-200, opacity:0},'last')
-tl.to('.delivering-result-container',5,{y:'-320%', opacity:0, display:'none'},'last')
+ 
+ 
  
  
 
@@ -114,6 +117,7 @@ let tl2 = gsap.timeline({
   scrollTrigger :{
       trigger : "#how-to-use-section",
       pin: true, 
+      markers: true,
       scrub: true,
       nullTargetWarn: false,
       start : "center center",
