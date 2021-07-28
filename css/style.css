@@ -613,8 +613,15 @@ z-index: -20;
 
   color: #d7063b;
 }
+.font-23{
+  font-size: 23px;
+}
+.how-2-use-btn{
+  background-color: #ffff;
+  color: #d7063b;
+}
 .left-description-messages-subtitle {
-  font-size: 17px;
+  font-size: 23px;
   font-family: Mulish;
 
   color: #d7063b;
@@ -627,7 +634,7 @@ z-index: -20;
   color: #d7063b;
 }
 .right-description-subtitle {
-  font-size: 17px;
+  font-size: 23px;
   font-family: Mulish;
 
   color: #d7063b;
