@@ -14,7 +14,7 @@ html {
 @font-face {
   font-family: Bodoni;
   src: url(../fonts/Bodoni72-Bold.ttf);
-  font-weight: bold;
+  font-weight: 800;
 }
 html {
   font-size: 62.5%;
