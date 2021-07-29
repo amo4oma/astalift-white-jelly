@@ -97,7 +97,7 @@ tl.to('.delivering-result-container', 5,{y:"-50%",opacity :1},'reanimate')
 tl.to('.wj-bottom' , 5, {y : '-210%', opacity:0},'next-page')
 tl.to('.flwr-7' , 5, {y : '-250%', opacity:0},'next-page')
 tl.to('.flwr-8' , 5, {y : '-280%', opacity:0},'next-page')
-tl.to('.delivering-result-container', 5,{y:"-230%",opacity :1},'next-page')
+tl.to('.delivering-result-container', 5,{y:"-200%",opacity :1},'next-page')
 tl.to('.skin-cells-container',5,{y:-100, opacity:1})
  
 
