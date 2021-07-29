@@ -781,10 +781,7 @@ z-index: -20;
   font-size: 3rem;
   padding: 0%;
   background-image: url(../images/how-to-use/Background.png);
-  /* -webkit-mask-image: url(../images/how-to-use/Frame.png);
-  mask-image: url(../images/how-to-use/Frame.png);
-  mask-size: contain;
-  -webkit-mask-size: contain; */
+  margin-bottom: 0px;
   overflow: hidden;
 }
 .how-to-use {
@@ -823,6 +820,7 @@ z-index: -20;
   position: absolute;
   display: block;
 }
+
 .how-to-use-messages {
   position: relative;
   left: 70%;
@@ -928,9 +926,11 @@ z-index: -20;
 }
 /* ------------------ */
 #sec-5 {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #f3eeea;
+  padding-bottom: 50px;
+ 
 }
 .swiper-container {
   width: 100%;
@@ -1263,6 +1263,9 @@ footer {
   }
   .wj-bottom, .wj-top {
   width: 21em;
+  }
+  .top-frame{
+    height: 100vh;
   }
 }
 .section-faq-container {

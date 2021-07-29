@@ -147,7 +147,7 @@ let tl2 = gsap.timeline({
         tl2.to('.flwres-frame', 0.5 , {x: -760}, '3rd')
       }else if ($(window).width() <= 1600){
         tl2.to('.girl-frame', 1 , {x : -1430}, '3rd')
-      }else if ($(window).width() <= 1370){
+      }else if ($(window).width() <= 1390){
         tl2.to('.girl-frame', 1 , {x : -1300}, '3rd')
       }else {
         tl2.to('.girl-frame', 1 , {x : -1420}, '3rd')
