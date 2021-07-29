@@ -131,6 +131,7 @@ let tl2 = gsap.timeline({
       tl2.from('.step-2', 1, {y: 100, opacity:0 }, 'frist')
       tl2.to('.step-2', 1, {opacity:0 })
       tl2.to('.flwres-frame', 0.5 , {x: -500}, 'second')
+      
       if($(window).width() <= 1440 ){
         tl2.to('.girl-frame', 1 , {x : -890}, 'second')
       }else{
@@ -140,14 +141,19 @@ let tl2 = gsap.timeline({
      
       tl2.from('.step-3', 1, {y: 100, opacity:0 }, 'second')
       tl2.to('.step-3', 1, {opacity:0 })
-      tl2.to('.flwres-frame', 0.5 , {x: -860}, '3rd')
+    
       if($(window).width() <= 1440 ){
-        tl2.to('.girl-frame', 1 , {x : -1390}, '3rd')
-      }else if ($(window).width() <= 1250){
-        tl2.to('.girl-frame', 1 , {x : -1200}, '3rd')
+        tl2.to('.girl-frame', 1 , {x : -1320}, '3rd')
+        tl2.to('.flwres-frame', 0.5 , {x: -760}, '3rd')
+      }else if ($(window).width() <= 1600){
+        tl2.to('.girl-frame', 1 , {x : -1430}, '3rd')
+      }else if ($(window).width() <= 1370){
+        tl2.to('.girl-frame', 1 , {x : -1300}, '3rd')
       }else {
         tl2.to('.girl-frame', 1 , {x : -1420}, '3rd')
+        tl2.to('.flwres-frame', 0.5 , {x: -860}, '3rd')
       }
+      
    
       tl2.from('.step-4', 2, {y: 100, opacity:0 }, '3rd')
  

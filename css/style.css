@@ -545,6 +545,9 @@ z-index: -20;
   -webkit-appearance:none;
   opacity: 1
 }
+ .subBtn{
+   width: 50px !important;
+ }
 .jelly-drops-container {
   position: relative;
   top: 120px;
