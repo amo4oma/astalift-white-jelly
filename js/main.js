@@ -70,8 +70,13 @@ tl.to('.flwr-8' , 5 , {y: "20%"},"seventh")
 tl.to('.flwr-7' , 5 , {x: "50%", rotation:"-=15"},"seventh")
 tl.to('.flwr-6' , 5 , {y: "-50%"},"seventh" )
 tl.to('.bottelAndDescrip-container' , 7 , {x: '13%'},"seventh")
+if ($(window).height()<= 695){
+  tl.to('.wj-bottom ' , 7 , {y: '70%'}, "eighth")
+}else{
+  tl.to('.wj-bottom ' , 7 , {y: '75%'}, "eighth")
+}
 tl.to('.wj-top ' , 7 , {y: '-165%'}, "eighth")
-tl.to('.wj-bottom ' , 7 , {y: '75%'}, "eighth")
+ 
 tl.to('.jellysAndMessages-container ' , 7 , {y: '20%', opacity:1})
 tl.to('.left-description-messages, .right-description-messages ' , 10 , {y: '-20%', opacity:1}, )
 tl.to('.left-description-messages, .right-description-messages ' , 10 , {y: '-40%', opacity:0}, )
@@ -95,8 +100,7 @@ tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 3.png"}})
 tl.to('.delivering-result-container', 5,{y:"-50%",opacity :1},'reanimate')
 
 tl.to('.wj-bottom' , 5, {y : '-210%', opacity:0},'next-page')
-tl.to('.flwr-7' , 5, {y : '-250%', opacity:0},'next-page')
-tl.to('.flwr-8' , 5, {y : '-280%', opacity:0},'next-page')
+ 
 tl.to('.delivering-result-container', 5,{y:"-200%",opacity :1},'next-page')
 tl.to('.skin-cells-container',5,{y:-100, opacity:1})
  
@@ -314,11 +318,12 @@ var mobileHowToUseSwiper = new Swiper(".mobile-how-to-use-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  nextButton: '.arrow-right',
+  prevButton: '.arrow-left'
  
-  nextButton: '.arrow-next',
-  prevButton: '.swiper-button-prev',
   
 });
+
 $('.arrow-left').hide();
 mobileHowToUseSwiper.on('transitionEnd', function() {
   console.log('*** mySwiper.realIndex', mobileHowToUseSwiper.realIndex);
@@ -361,6 +366,13 @@ TweenMax.to({}, 0.016, {
 			}
 		});
 	}	
+});
+
+$(".arrow-right").on('click', function (){
+  mobileHowToUseSwiper.slideNext();
+});
+$(".arrow-left").click(function (){
+  mobileHowToUseSwiper.slidePrev();
 });
 
 $(document).on("mousemove",function(e){

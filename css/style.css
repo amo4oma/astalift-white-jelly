@@ -745,6 +745,13 @@ z-index: -20;
 .second-message {
   position: absolute;
 }
+#mc-embedded-subscribe{
+  border-radius: 0px !important;
+  margin-left: 10px !important;
+}
+.fa-facebook-f{
+  font-size: 12px;
+}
 .button-col {
   position: relative;
   left: 33%;
@@ -1143,11 +1150,11 @@ a.btn-mod {
   width: 100%;
 }
 .other-product {
-  width: 200px;
-  height: 276px;
+  width: 180px;
+  height: 246px;
 }
 .red-product {
-  height: 269px;
+  height: 242px;
   object-fit: contain;
 }
 .buy-now-btn {
@@ -1216,8 +1223,8 @@ footer {
   color: #d7063b;
 }
 .banner-social-button {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: #464646;
   color: #fff;
   border-radius: 50px;
@@ -1227,16 +1234,14 @@ footer {
   text-decoration: none;
   margin: 10px;
 }
-.newsletter {
-  border-radius: 25px 0px 0px 25px !important;
-}
+ 
 .btn-white {
   background-color: #c7103f !important;
   color: #fff;
   border-radius: 0px 25px 25px 0px !important;
 }
 .banner-social-button .fab {
-  font-size: 30px;
+  font-size: 15px;
 }
 #mc_embed_signup_scroll .form-control {
   margin: 0;
@@ -1391,6 +1396,19 @@ footer {
   #sec-2 {
     overflow: hidden;
   }
+}
+@media screen and (max-height: 700px) {
+  .wj-top{
+    width: 21em;
+  }
+  .wj-bottom{
+    width: 21em;
+  }
+  .jelly-drops-container {
+ 
+    top: 85px;
+}
+  
 }
 @media screen and (max-width: 480px) {
   #mobile-contact{
