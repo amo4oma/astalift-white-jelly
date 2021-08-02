@@ -465,8 +465,8 @@
     <section id="how-2-use-mobile">
       <div class="swiper-container mobile-how-to-use-slider row">
         <h1 class="how-2-use-mobile-title">How To Use</h1>
-        <i class="arrow-right"><img class="arrow-img" src="./images/mobile/19_Arrow_Next.png" alt=""></i>
-        <i class="arrow-left"><img class="arrow-img" src="./images/mobile/18_Arrow_Previous.png" alt=""></i>
+        <i class="arrow-right" onclick="goNext()"><img class="arrow-img" src="./images/mobile/19_Arrow_Next.png" alt=""></i>
+        <i class="arrow-left" onclick="goPrev()"><img class="arrow-img" src="./images/mobile/18_Arrow_Previous.png" alt=""></i>
         <div class="swiper-wrapper">
 
           <div class="swiper-slide text-center d-flex flex-column">
@@ -929,7 +929,7 @@
           <div class="d-flex flex-column">
             <h4>LOYALTY</h4>
             <a id='footer-a' href='https://www.astalift.com.sg/my-account/' target='_blank'>My Account </a>
-            <h4>Subscribe</h4>
+            <h4 class="text-uppercase mt-4">Subscribe</h4>
             <div id="mc_embed_signup">
               <form
                 action="https://astalift.us20.list-manage.com/subscribe/post?u=09ab15b75b4fb84e2a18e4aa5&amp;id=0839564117"
@@ -954,7 +954,7 @@
               </form>
             </div>
 
-            <h4 class="Subscribe-and-follow">Subscribe & Follow</h4>
+            <h4 class="Subscribe-and-follow text-uppercase mt-4">Subscribe & Follow</h4>
             <div id="footer-social" class="d-flex d-inline">
               <a class=" banner-social-button" href="https://www.facebook.com/AstaliftSingapore" target="_blank">
                 <i class="fab fa-facebook-f"></i></a>
@@ -965,7 +965,7 @@
                   <i class="fab fa-youtube"></i></a>
             </div>
 
-
+            <a onclick="topFunction()" class="scroll-to-top d-flex justify-content-center align-items-center" ><i class="fas fa-chevron-up"></i></a>
           </div>
         </div>
       </div>

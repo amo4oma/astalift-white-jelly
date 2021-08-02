@@ -90,19 +90,28 @@ tl.to('.flwr-7' , 5, {y : '-75%'},'up')
 tl.to('.flwr-8' , 5, {y : '-70%'},'up')
 tl.fromTo('.delivering-result-container', 5, {y : '300%', opacity:0},{y:"-10%",opacity :1},'up')
 tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 2.png"}}, )
+if ($(window).width() <= 1370 ||  $(window).height() <= 770 ){
+  tl.to('.wj-bottom' , 5, {y : '-100%'},'up-2')
+}else{
 tl.to('.wj-bottom' , 5, {y : '-110%'},'up-2')
+}
 tl.to('.flwr-7' , 5, {y : '-150%'},'up-2')
 tl.to('.flwr-8' , 5, {y : '-180%'},'up-2')
 
 tl.to('.jellysAndMessages-container, .flwr-9,.flwr-6,.flwr-5,.leaf-2, .wj-top',4, {y:"-200%", opacity:0} , 'up')
 
 tl.set('.wj-bottom' , {attr:{src: "./images/hearo2/White Jelly Bottom 3.png"}})
+
 tl.to('.delivering-result-container', 5,{y:"-50%",opacity :1},'reanimate')
 
 tl.to('.wj-bottom' , 5, {y : '-210%', opacity:0},'next-page')
- 
-tl.to('.delivering-result-container', 5,{y:"-200%",opacity :1},'next-page')
-tl.to('.skin-cells-container',5,{y:-100, opacity:1})
+if ($(window).width() <= 1370 ||  $(window).height() <= 770 ){
+  tl.to('.delivering-result-container', 5,{y:"-180%",opacity :1},'next-page')
+}else{
+  tl.to('.delivering-result-container', 5,{y:"-200%",opacity :1},'next-page')
+}
+
+tl.to('.skin-cells-container',5,{y:-100, opacity:1},'next-page')
  
 
 tl.to('.cell-1, .cell-2', 5, {y:75},"cells-to-skin-1")
@@ -324,6 +333,7 @@ var mobileHowToUseSwiper = new Swiper(".mobile-how-to-use-slider", {
   
 });
 
+
 $('.arrow-left').hide();
 mobileHowToUseSwiper.on('transitionEnd', function() {
   console.log('*** mySwiper.realIndex', mobileHowToUseSwiper.realIndex);
@@ -331,13 +341,22 @@ mobileHowToUseSwiper.on('transitionEnd', function() {
     $('.arrow-left').hide();
   } else{
     $('.arrow-left').show();
+    
   }
   if (mobileHowToUseSwiper.realIndex === 3){
     $('.arrow-right').hide();
   } else{
     $('.arrow-right').show();
   }
+
 });
+ function goNext(){
+  mobileHowToUseSwiper.slideNext();
+}
+ function goPrev(){
+  mobileHowToUseSwiper.slidePrev();
+}
+
 var cursor = $(".cursor"),
 		follower = $(".cursor-follower");
 
@@ -368,12 +387,7 @@ TweenMax.to({}, 0.016, {
 	}	
 });
 
-$(".arrow-right").on('click', function (){
-  mobileHowToUseSwiper.slideNext();
-});
-$(".arrow-left").click(function (){
-  mobileHowToUseSwiper.slidePrev();
-});
+
 
 $(document).on("mousemove",function(e){
 	mouseX = e.pageX;

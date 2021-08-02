@@ -1203,16 +1203,30 @@ footer {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+.scroll-to-top{
+  margin-left: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(10, 10, 10, 0.562);
+  color: #fff;
+  text-decoration: none;
+}
+.scroll-to-top .fas{
+  font-size: 17px;
+  color: #fff;
+}
 #footer-a {
   color: #000;
   text-decoration: none;
   font-weight: 500;
+  line-height: 2;
+  font-size: 15px;
 }
 #desktop-footer h4 {
   color: #c7103f;
   font-family: Bodoni;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 #desktop-footer a {
   font-family: Mulish;
@@ -1271,6 +1285,9 @@ footer {
   }
   .top-frame{
     height: 100vh;
+  }
+  .button-col {
+    bottom: -16em;
   }
 }
 .section-faq-container {
@@ -1452,8 +1469,8 @@ footer {
   }
   .placeholder-flower-1{
     width: 150px;
-    left: -1rem;
-    top: -80px;
+    left: -4rem;
+    top: -86px;
   }
   .placeholder-flower-2-front {
     width: 150px;
