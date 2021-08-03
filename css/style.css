@@ -1717,9 +1717,12 @@ footer {
     z-index: 55555;
     
   }
+  #goprev{
+    display: none;
+  }
   .arrow-left{
     position: absolute;
- 
+    display: none;
     top: 50%;
     color: #fff;
     font-size: 15px;

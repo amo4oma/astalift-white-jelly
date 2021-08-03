@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="stylesheet" href="css/slick.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -463,13 +464,12 @@
       </div>
     </section>
     <section id="how-2-use-mobile">
-      <div class="swiper-container mobile-how-to-use-slider row">
+      <div id="h2u-mobile" class="swiper-container mobile-how-to-use-slider row">
         <h1 class="how-2-use-mobile-title">How To Use</h1>
-        <i class="arrow-right" onclick="goNext()"><img class="arrow-img" src="./images/mobile/19_Arrow_Next.png" alt=""></i>
-        <i class="arrow-left" onclick="goPrev()"><img class="arrow-img" src="./images/mobile/18_Arrow_Previous.png" alt=""></i>
-        <div class="swiper-wrapper">
+ 
+        <div class="swiper-wrapper slick-wrapper">
 
-          <div class="swiper-slide text-center d-flex flex-column">
+          <div class="swiper-slide text-center d-flex flex-column" data-index="0">
             <img class="how-2-use-image" src="./images/mobile/14_Step01.png" alt="">
             <div class="step-1-mobile  d-flex flex-column align-items-center">
               <h4 class="step-text-1 ">Step 1</h4>
@@ -477,7 +477,7 @@
                 onto your palm. Then spread evenly across your cleansed face.</p>
             </div>
           </div>
-          <div class="swiper-slide text-center d-flex flex-column">
+          <div class="swiper-slide text-center d-flex flex-column" data-index="1">
             <img class="how-2-use-image" src="./images/mobile/15_Step02.png" alt="">
             <div class="step-1-mobile  d-flex flex-column align-items-center">
               <h4 class="step-text-1 ">Step 2</h4>
@@ -491,14 +491,14 @@
             </div>
           </div>
 
-          <div class="swiper-slide text-center d-flex flex-column">
+          <div class="swiper-slide text-center d-flex flex-column" data-index="2">
             <img class="how-2-use-image" src="./images/mobile/16_Step03.png" alt="">
             <div class="step-3-mobile d-flex flex-column align-items-center">
               <h4 class="step-text-1">Step 3</h4>
               <p class="how-2-use-mobile-d">Apply lotion immediately after applying the jelly for a moist-up effect.</p>
             </div>
           </div>
-          <div class="swiper-slide text-center d-flex flex-column">
+          <div class="swiper-slide text-center d-flex flex-column" data-index="3">
             <img class="how-2-use-image" src="./images/mobile/17_Step04.png" alt="">
             <div class="step-4-mobile d-flex flex-column align-items-center">
               <h4 class="step-text-1">Step 4</h4>
@@ -1113,6 +1113,7 @@
 
 
   <script src="js/main.js?v=2.1"></script>
+  <script src="js/slick.js"></script>
 
   <script>
     $(".vpop").on('click', function (e) {
@@ -1208,6 +1209,8 @@
     function closeSlider() {
       $('.slider').toggleClass('open');
     }
+
+    
   </script>
 </body>
 

@@ -317,45 +317,74 @@ $('.mobile-arrows-left ').click(function(e){
 // second swiper ends
 // mobile-how-to-use-slider
 
+$('.slick-wrapper').slick({
+  nextArrow:"<i id='gonext' class='arrow-right'  ><img class='arrow-img' src='./images/mobile/19_Arrow_Next.png'></i>",
+  prevArrow:"<i id='goprev' class='arrow-left'  ><img class='arrow-img' src='./images/mobile/18_Arrow_Previous.png'></i>",
+  infinite: false,
 
-var mobileHowToUseSwiper = new Swiper(".mobile-how-to-use-slider", {
-  slidesPerView:1,
-  centeredSlides: true,
-  spaceBetween: screenWidth> 600 ? 10 : 1,
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  nextButton: '.arrow-right',
-  prevButton: '.arrow-left'
+})
+$('#goprev').hide();
+$(document).ready(function(){
+  $('.slick-wrapper').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  var dataId = $(slick.$slides[currentSlide]).data('index');  
+  console.log(dataId)   
+  if (dataId === 0){
+    $('#goprev').hide();
+  }else{
+    $('#goprev').show();
+  }
+  if(dataId ===3){
+    $('#gonext').hide();
+  }else{
+    $('#gonext').show();
+  }
+});
+})
+
  
-  
-});
+// let howTouseMobile = new Swiper('#h2u-mobile', {
+//   slidesPerView:  1,
+//   paginationClickable: true,
+//   spaceBetween:  1,
+//   lazyLoading: true,
+ 
+
+// });
 
 
-$('.arrow-left').hide();
-mobileHowToUseSwiper.on('transitionEnd', function() {
-  console.log('*** mySwiper.realIndex', mobileHowToUseSwiper.realIndex);
-  if (mobileHowToUseSwiper.realIndex === 0){
-    $('.arrow-left').hide();
-  } else{
-    $('.arrow-left').show();
-    
-  }
-  if (mobileHowToUseSwiper.realIndex === 3){
-    $('.arrow-right').hide();
-  } else{
-    $('.arrow-right').show();
-  }
 
-});
- function goNext(){
-  mobileHowToUseSwiper.slideNext();
-}
- function goPrev(){
-  mobileHowToUseSwiper.slidePrev();
-}
+// howTouseMobile.on('transitionEnd', function() {
+//   console.log('*** mySwiper.realIndex', howTouseMobile.realIndex);
+//   if(howTouseMobile.realIndex === 0){
+//     $('#goprev').hide();
+
+//   }else{
+//     $('#goprev').show();
+//   }
+//   if(howTouseMobile.realIndex === 3){
+//     $('#gonext').hide();
+
+//   }else{
+//     $('#gonext').show();
+//   }
+// });
+ 
+// $('#gonext').click(function(e){
+
+//   howTouseMobile.slideNext();
+ 
+// });
+// $('#goprev').click(function(e){
+
+//   howTouseMobile.slidePrev();
+ 
+// });
+
+ 
+
+
+ 
+
 
 var cursor = $(".cursor"),
 		follower = $(".cursor-follower");
