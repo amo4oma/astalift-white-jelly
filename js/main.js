@@ -71,7 +71,7 @@ tl.to('.flwr-7' , 5 , {x: "50%", rotation:"-=15"},"seventh")
 tl.to('.flwr-6' , 5 , {y: "-50%"},"seventh" )
 tl.to('.bottelAndDescrip-container' , 7 , {x: '13%'},"seventh")
 if ($(window).height()<= 695){
-  tl.to('.wj-bottom ' , 7 , {y: '70%'}, "eighth")
+  tl.to('.wj-bottom ' , 7 , {y: '60%'}, "eighth")
 }else{
   tl.to('.wj-bottom ' , 7 , {y: '75%'}, "eighth")
 }
@@ -283,33 +283,33 @@ var newSwiper = new Swiper('.slider2', {
   paginationClickable: true,
   spaceBetween: screenWidth > 600 ? 2 : 1,
   lazyLoading: true,
-  nextButton: '.mobile-arrows-right ',
-  prevButton: '.mobile-arrows-left '
+  nextButton: '.new-arrow-swiper-2-right ',
+  prevButton: '.new-arrow-swiper-2-left '
 });
 
-$('.mobile-arrows-left').hide();
+$('.new-arrow-swiper-2-left').hide();
 newSwiper.on('transitionEnd', function() {
   console.log('*** mySwiper.realIndex', newSwiper.realIndex);
   if(newSwiper.realIndex === 0){
-    $('.mobile-arrows-left').hide();
+    $('.new-arrow-swiper-2-left').hide();
 
   }else{
-    $('.mobile-arrows-left').show();
+    $('.new-arrow-swiper-2-left').show();
   }
   if(newSwiper.realIndex === 3){
-    $('.mobile-arrows-right').hide();
+    $('.new-arrow-swiper-2-right').hide();
 
   }else{
-    $('.mobile-arrows-right').show();
+    $('.new-arrow-swiper-2-right').show();
   }
 });
  
-$('.mobile-arrows-right').click(function(e){
+$('.new-arrow-swiper-2-right').click(function(e){
 
   newSwiper.slideNext();
 
 });
-$('.mobile-arrows-left ').click(function(e){
+$('.new-arrow-swiper-2-left ').click(function(e){
 
   newSwiper.slidePrev();
 
