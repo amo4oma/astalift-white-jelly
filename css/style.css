@@ -56,7 +56,7 @@ h1 {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   margin-left: 100px;
 }
 #mobile-nav{
@@ -1147,7 +1147,8 @@ a.btn-mod {
   margin-top: 0px;
   padding-top: 0px;
   height: 100vh;
-  width: 100%;
+  width: 99%;
+  overflow: hidden;
 }
 .other-product {
   width: 180px;
@@ -1230,17 +1231,19 @@ footer {
 }
 #desktop-footer a {
   font-family: Mulish;
-  font-size: 17px;
+  font-size: 15px;
   cursor: pointer;
 }
 #desktop-footer a:hover {
   color: #d7063b;
 }
+.fujifilm{
+  font-size: 15px;
+  padding-bottom: 14px;
+}
 .banner-social-button {
-  width: 30px;
-  height: 30px;
-  background-color: #464646;
-  color: #fff;
+ 
+  color: #464646;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -1275,8 +1278,17 @@ footer {
     font-size: 20px;
   }
 }
- 
+ @media only screen and (min-width:1688px) {
+  .main-title {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+ }
 @media only screen and (min-width: 500px) and (max-width: 1370px )  and (max-height:735px){
+  .placeholder-row {
+    margin-top: 106px;
+}
   .title-1{
     font-size: 9rem !important;
   }
@@ -1330,7 +1342,7 @@ footer {
   font-weight: 600;
   flex: 1;
   margin-right: 16px;
-  color: #e60012;
+  color: #cf063b;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
@@ -1407,6 +1419,9 @@ footer {
  .mySwiper{
   left: -86px;
 }
+.mobile-arrows-right{
+  display: none;
+}
  
 /* -------------- */
 @media screen and (max-width: 768px) {
@@ -1432,7 +1447,12 @@ footer {
     display: block;
   
   }
- 
+  .mobile-arrows-right{
+    display: block;
+  }
+  .loader-page-container {
+  padding-top: 100px;
+  }
   .placeholder-row{
     margin-top: 130px;
  
@@ -1458,8 +1478,8 @@ footer {
     top: -20px;
   }
   .placeholder-title-2{
-
-    font-size: 34px;
+    font-size: 45px;
+    width: 99%;
   }
   .loader-page-container{
     padding-top: 150px;
@@ -1468,14 +1488,15 @@ footer {
     width: 250px;
   }
   .placeholder-flower-1{
-    width: 150px;
-    left: -4rem;
-    top: -86px;
+    width: 196px;
+    left: 0rem;
+    top: -170px;
+    transform: rotate(21deg);
   }
   .placeholder-flower-2-front {
-    width: 150px;
+    width: 207px;
     right: 2rem;
-    top: 18px;
+    top: 39px;
   }
 
 #loader-container {
@@ -1529,7 +1550,7 @@ footer {
   }
  
   .navbar {
-    height: 50px;
+    height: 56px;
   }
   .slider::before{
       content: "";
@@ -1549,9 +1570,12 @@ footer {
     font-size: 21px;
     color: #f3eeea;
   }
+  .navbar-brand{
+    width: auto;
+  }
   .logo {
     width: 120px;
-    transform: translate(32%);
+    margin-left: 0px;
   }
   .slider-logo{
     width: 100px;
@@ -1570,15 +1594,17 @@ footer {
     font-size: 20px;
     line-height: 3;
     font-family: Mulish;
+    
   }
-  .slider-link::after{
-    content:'';
-    display:block;
-    margin-top:5px;
-    margin-left:15px;
-    width:250px;  
-    border-bottom: 2px solid #f3f3f3
+  .devider{
+    width: 100%;
+
   }
+  .inner {
+    margin-top:19px;
+    width: 80%;
+    border-bottom: 2px solid #F5F5F5;   
+   }
   .bodoni{
     font-family: Bodoni !important;
   }
@@ -1759,12 +1785,7 @@ footer {
     font-size: 21.5px;
     color: #fff;
   }
-  .video-slide-mobile{
-    margin-top: 50px;
-    width: 70% !important;
  
-
-  }
 
   .they-using-it-title {
  
@@ -1772,10 +1793,8 @@ footer {
     width: 100%;
   }
   .image-of-vedio{
-    left: 50%;
     margin-top: 110px;
-    transform: translate(-26%);
-    width: 100%;
+    width: 100% !important;
   }
   .how-2-use-mobile-d{
     width: 80%;
@@ -1811,6 +1830,7 @@ footer {
   .mobile-arrows-right .fa-arrow-right{
     color: #d7063b;
     opacity: 1;
+    display: block;
   }
   .mobile-arrows-left{
     position: absolute;
@@ -1822,7 +1842,26 @@ footer {
     opacity: 1;
     font-size: 15px;
   }
+  .new-arrow-swiper-2-right{
+    
+    width: 36px;
+    position: absolute;
+    z-index: 500 !important;
+    top: -40em;
+    left: 87%;
+
+  }
+  .new-arrow-swiper-2-left{
+    
+    width: 36px;
+    position: absolute;
+    z-index: 500 !important;
+    top: -40em;
+    left: 7%;
+
+  }
   .mobile-arrows-right{
+    
     position: absolute;
     width: 40px;
     top: 38.5%;
